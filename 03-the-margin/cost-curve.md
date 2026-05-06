@@ -23,16 +23,29 @@ _____
 
 
 
-## Cost Model
+| Feature                     | Complexity       | Model Tier         |    Cost / Req | Volume % |          Weighted Cost |
+| --------------------------- | ---------------- | ------------------ | ------------: | -------: | ---------------------: |
+| **Enterprise AI Search**    | Simple / Medium  | Small + Mid        |     **$0.05** |  **55%** |             **$0.028** |
+| **Workflows**               | Medium           | Mid                |     **$0.10** |  **25%** |             **$0.025** |
+| **Productivity — Edit**     | Simple / Medium  | Small + Mid        |     **$0.10** |  **10%** |             **$0.010** |
+| **Productivity — Create**   | Medium / Complex | Mid + Frontier     |     **$0.50** |   **7%** |             **$0.035** |
+| **Agentic Delivery / Claw** | Complex          | Frontier / Agentic | **$0.05 TBC** |   **3%** |             **$0.002** |
+| **Blended**                 |                  |                    |               | **100%** | **$0.100 per request** |
+
+
+
 
 | Cost Category | Per-User/Month | Notes |
 |--------------|----------------|-------|
-| Inference (primary model) | | |
-| Inference (cascading/triage) | | |
-| Infrastructure | | |
-| Data/storage | | |
-| Human-in-the-loop | | |
-| **Total AI COGS** | | |
+| Inference (primary model) | 2.25|Enterprise AI Search, Catch Me Up, writing, summaries, Q&A, and workflow outputs |
+| Inference (cascading/triage) | $0.40|Low-cost model used to classify requests, route them to the right model tier, rewrite search queries, check confidence, and decide whether a task needs escalation. |
+| Infrastructure |$0.35 | Orchestration, permissions, workflow execution layer, observability, job queues, logging, rate limits, and secure action handling.|
+| Data/storage |$0.30 | Indexed Workvivo content, connected knowledge sources, workflow context, embeddings, metadata, retrieval cache, and audit logs.|
+| Human-in-the-loop |$0.20 | QA sampling, customer onboarding calibration, safety reviews, workflow testing, and evaluation of high-risk outputs.|
+| **Total AI COGS** | $3.50| Based on an assumed blended usage cost of approximately $0.10 per AI action and 35 AI actions per user per month.|
+
+
+
 
 ## Cascading Strategy
 <!-- Cheap model → frontier model routing logic -->

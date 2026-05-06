@@ -1,5 +1,28 @@
 # Cost Curve & Pricing Strategy
 
+
+🏆 Leader: The feature they come for
+Enterprise AI Search
+_____________
+
+🍟 Filler: Nice add, bumps ARPU
+Catch me up, 
+_____________
+
+💀 Killer: Sell separately or die
+Agentic execution - book time off (too expensive to bundle)
+_____________
+
+_____
+Killer usage % 
+10–30% of users actively use killer features in a given month. (not something our customers are screaming for, but expensive - so risky to rollout to everyone.
+_____
+Bundle or add-on
+_____
+70% rule: if Killer usage is <70%, it is probably an add-on.
+
+
+
 ## Cost Model
 
 | Cost Category | Per-User/Month | Notes |

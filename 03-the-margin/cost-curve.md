@@ -185,13 +185,13 @@ The $3 AI Companion package supports broad adoption and includes core campaign o
 
 ## Stress Tests
 
+
 | Scenario | Impact on Margin | Response |
 |---|---|---|
-| **Inference costs 3x** | Active Comms Orchestrator COGS rises from **$4.70 to $14.10** per active creator. In a 1,000-person org with 2 active creators, blended COGS rises from **$0.0094 to $0.0282** per contracted user. AI Companion margin remains healthy, but heavy creator usage becomes more visible. | Tighten routing through Zoom AI Companion 3.0 so more edits, rewrites, and regenerations stay on lightweight or standard model paths. Reserve advanced model paths for long-form, executive-facing, or multi-channel campaigns. |
-| **Heaviest segment doubles** | If active Comms Orchestrator users double, a small org moves from **2 to 4 active creators**, a mid-market org from **5 to 10**, and an enterprise from **10 to 20**. COGS doubles, but remains low when blended across all contracted users. The bigger risk is repeated regenerations and uncontrolled creator access. | Add creator access controls, usage dashboards, and fair-use thresholds. Keep core Comms Orchestrator in AI Companion, but route heavy generation and high-volume creators into Agentic AI Companion or consumption-based pricing. |
-| **Model provider / platform costs rise 50%** | Active Comms Orchestrator COGS rises from **$4.70 to $7.05** per active creator. In a 1,000-person org with 2 active creators, blended COGS rises from **$0.0094 to $0.0141** per contracted user. Margin impact is limited for standard Comms Orchestrator, but broader AI Companion margin may compress if Enterprise AI Search usage also rises. | Use Zoom AI Companion 3.0 model routing to shift routine edits and summaries to lower-cost model paths. Monitor search and generation separately, and apply consumption pricing once usage ceilings are reached. |
-| **Agentic Liquid Content usage spikes** | Incremental agentic COGS is **[NEEDS INPUT]**, but usage could become unpredictable if users generate many campaign variants from one prompt. The risk is higher in the **$6 Agentic AI Companion** tier because users expect more advanced generation. | Keep Agentic Liquid Content out of the $3 AI Companion tier. Apply stricter routing, variant limits, usage ceilings, and consumption pricing after the ceiling is reached. |
-| **Enterprise AI Search usage doubles** | Search COGS rises from **$1.00 to $2.00 per contracted user** if average usage increases from 20 to 40 searches per user/month. This has a much larger margin impact than Comms Orchestrator because search is used across the full employee base. | Treat Enterprise AI Search as the main COGS driver. Use caching, retrieval limits, query rewriting, and consumption pricing after the usage ceiling is reached. |
+| **Inference costs 3x** | Modeled AI COGS rises from **$1.0094 to ~$3.02 per contracted user/month**. For Core SaaS + AI Companion at **$7 PUPM**, gross margin falls from **~74.2% to ~45.4%**, assuming $0.80 non-AI COGS. | Tighten Zoom AI Companion 3.0 routing so more search, edits, summaries, and regenerations stay on lightweight or standard model paths. Reserve advanced model paths for long-form, executive-facing, multi-channel, or multi-audience campaign generation. |
+| **Active creator count expands 10x** | A 1,000-person customer moves from **2 to 20 active Comms Orchestrator creators**. Standard Comms Orchestrator COGS rises from **$9.40 to $94.00/month**, or from **$0.0094 to $0.094 per contracted user/month**. Total modeled AI COGS rises from **$1.0094 to $1.094 per contracted user/month**. Gross margin falls from **~74.2% to ~72.9%**. | Add creator permissions, usage dashboards, and fair-use thresholds. Keep core Comms Orchestrator in AI Companion, but route heavy creators, repeated regenerations, and Liquid Content workflows into Agentic AI Companion or consumption-based pricing. |
+| **Model provider raises prices 50%** | Modeled AI COGS rises from **$1.0094 to ~$1.51 per contracted user/month**. For Core SaaS + AI Companion at **$7 PUPM**, gross margin falls from **~74.2% to ~67.0%**, assuming $0.80 non-AI COGS. | Use Zoom AI Companion 3.0’s federated routing to shift routine tasks to lower-cost model paths. Monitor Enterprise AI Search separately from campaign generation, cache repeated retrievals where possible, and apply consumption pricing once usage ceilings are reached. |
+
 
 
 ## Board One-Pager
@@ -200,7 +200,7 @@ The $3 AI Companion package supports broad adoption and includes core campaign o
 
 - **Current pricing:** $4 PUPM
 - **Current gross margin:** ~80%
-- **Value framed as:** Internal communications, employee engagement, campaign publishing, and content delivery. For comms teams, the value is helping them reach employees, keep people informed, and manage campaigns more efficiently across Workvivo.
+- **Value framed as:** Internal communications reach, employee engagement, campaign publishing, and content delivery for comms teams.
 
 ---
 
@@ -211,52 +211,46 @@ The $3 AI Companion package supports broad adoption and includes core campaign o
     - $4 core platform + $3 AI Companion  
   - Core SaaS + Agentic AI Companion: **$10 PUPM**  
     - $4 core platform + $6 Agentic AI Companion  
-  - Consumption-based pricing applies once usage ceilings are reached.
+  - Consumption-based pricing applies after usage ceilings are reached.
 
 - **AI COGS per user/month:**  
   - Enterprise AI Search: **$1.00 per contracted user/month**  
     - Based on 20 searches per user/month at $0.05 per search.  
-  - Comms Orchestrator: **$4.70 per active creator/month**  
-  - Blended Comms Orchestrator COGS in a small 1,000-person customer with 2 active creators: **$0.0094 per contracted user/month**  
-  - Total modeled AI COGS for AI Companion: **$1.0094 per contracted user/month**
+  - Comms Orchestrator: **$0.0094 per contracted user/month**  
+    - Based on 2 active creators at $4.70 each, blended across 1,000 contracted users.  
+  - **Total modeled AI COGS for AI Companion:** **$1.0094 per contracted user/month**
 
 - **Expected gross margin:**  
-  - Core SaaS gross margin: **~80%**  
-  - Core SaaS + AI Companion: **~74.2%**, assuming $0.80 non-AI COGS from the current SaaS margin and $1.0094 AI COGS.  
-  - Core SaaS + Agentic AI Companion: **~81.9% before incremental Agentic Liquid Content COGS**.  
-  - Incremental Agentic Liquid Content COGS: **[NEEDS INPUT]**
+  - Core SaaS + AI Companion: **~74.2%** at planned usage  
+  - Core SaaS + Agentic AI Companion: **[NEEDS INPUT]** because incremental Agentic Liquid Content COGS is not yet defined.
 
-- **Value framed as:** Workvivo shifts from a comms and engagement platform into an AI-powered orchestration layer. For comms teams, this means faster campaign creation, AI-assisted content generation, predictive channel performance, recommended timing, direct publishing to Workvivo, and the ability to coordinate content across multiple channels. For the business, the value is connecting knowledge, systems, and conversations so employees can get answers and turn those answers into action.
+- **Value framed as:** AI-powered campaign orchestration, faster content creation, employee knowledge activation, reduced manual drafting and editing, and better comms productivity.
 
 ---
 
 ### Net margin shift
 
 - **Margin moves from ~80% to ~74.2% for the Core SaaS + AI Companion package.**
-- Margin decreases because AI introduces variable usage-based COGS, primarily from Enterprise AI Search usage across the full contracted employee base. Comms Orchestrator itself is not the main cost driver because only a small number of comms, HR, or admin users actively use it. The larger cost driver is broad employee search usage at approximately **$1.00 per contracted user/month**.
+- Margin decreases because AI introduces variable COGS, primarily from Enterprise AI Search usage across the full contracted user base. Comms Orchestrator itself is not the main margin driver because only a small number of comms/admin users use it directly. At planned usage, Enterprise AI Search contributes **$1.00 PUPM** of modeled AI COGS, while blended Comms Orchestrator contributes only **$0.0094 PUPM**.
 
 ---
 
 ### Why this is still a good business
 
-Even though gross margin falls from ~80% to ~74.2%, gross profit per user increases.
+Even though gross margin percentage declines, gross profit per user increases.
 
-- Traditional SaaS gross profit:  
-  - $4 revenue × 80% margin = **$3.20 gross profit/user/month**
+- Traditional SaaS gross profit: **$3.20 PUPM**  
+  - $4 revenue × 80% margin
 
-- Core SaaS + AI Companion gross profit:  
-  - $7 revenue - $0.80 non-AI COGS - $1.0094 AI COGS = **$5.1906 gross profit/user/month**
+- Core SaaS + AI Companion gross profit: **$5.1906 PUPM**  
+  - $7 revenue - $0.80 non-AI COGS - $1.0094 AI COGS
 
-That means gross profit per user increases by approximately **$1.99 PUPM**, even though the margin percentage declines.
-
-This is still attractive because AI Companion expands the value proposition from communication delivery to governed intelligence and orchestration. Workvivo is not just helping comms teams publish content; it is helping them plan campaigns, generate content, predict performance, recommend timing, and activate the platforms the organization already owns. That creates a stronger case for ARPU expansion, retention, NRR, and movement into the **$6 Agentic AI Companion** tier.
-
-The $6 Agentic AI Companion tier creates additional upside because it raises total revenue to **$10 PUPM** and gives Workvivo a premium path for higher-value capabilities like Agentic Liquid Content. Final Agentic AI Companion margin depends on **[NEEDS INPUT: incremental Agentic Liquid Content COGS]**.
+That means gross profit per user increases by approximately **$1.99 PUPM**. The business is attractive if AI Companion increases ARPU, improves retention, strengthens NRR, and creates a clear upgrade path into the **$10 Core SaaS + Agentic AI Companion** package.
 
 ---
 
 ### Board-ready narrative
 
-The core SaaS platform is priced at **$4 PUPM** with an estimated gross margin of around **80%**. Adding AI Companion increases the customer price to **$7 PUPM** and introduces approximately **$1.0094 PUPM** in modeled AI COGS, bringing expected gross margin to around **74.2%**. While the margin percentage declines, gross profit per user increases from **$3.20 to $5.19**, so the AI package improves monetization if it supports adoption, retention, and expansion. The strategic value is that Workvivo moves from a comms and engagement platform to an orchestration layer that helps customers connect knowledge, create campaigns, recommend actions, and activate the systems they already own. The main risk is uncontrolled AI usage, especially broad Enterprise AI Search growth, repeated campaign regeneration, or Agentic Liquid Content. We mitigate that through Zoom AI Companion 3.0 routing, usage ceilings, creator access controls, and consumption-based pricing once customers exceed planned usage.
+The core SaaS platform is priced at **$4 PUPM** with an estimated gross margin of around **80%**. Adding AI Companion increases the customer price to **$7 PUPM** and introduces approximately **$1.0094 PUPM** in modeled AI COGS, bringing expected gross margin to around **74.2%**. While margin percentage declines, gross profit per user increases from **$3.20 to $5.19**, so the AI package improves monetization if it supports adoption, retention, and expansion. The main risk is uncontrolled AI usage, especially broad Enterprise AI Search growth, repeated campaign regeneration, or Agentic Liquid Content. We mitigate that through Zoom AI Companion 3.0 routing, usage ceilings, creator access controls, and consumption-based pricing once customers exceed planned usage.
 
 **The bet works if...** AI Companion increases ARPU and retention enough to justify the margin shift, while Agentic AI Companion captures premium orchestration and liquid content use cases and usage ceilings protect margin from heavy consumption.

@@ -46,33 +46,47 @@ Dataset health
 - ✅ Users see AI reasoning / drivers *(in principle — needs deeper explanation, see Confident tier above)*
 - ✅ Users correct & override outputs *(Edit and Regenerate in the prototype)*
 - ✅ Corrections feed back into the model / dataset *(captured today; the gap is that they don't yet compound into model improvement — Loop 1 of my data flywheel, score 2/5)*
-- ⬜ Users adjust the confidence threshold *(admins set thresholds today, not individual users)*
+- X Users adjust the confidence threshold *(admins set thresholds today, not individual users)*
 
-Three of the four user controls are real today. The fourth — user-adjustable thresholds — isn't yet, and corrections are captured but not yet compounded.
 
-**What works:** users can edit and regenerate outputs in the prototype. The audit trail for overrides is designed in. Corrections are captured.
+Three of the four user controls are real today. Adjustable thresholds isn't one of them — admins set those, not individual users. And while corrections do get captured, they don't yet do much once they're in.
 
-**What doesn't yet:** corrections don't yet compound. Every edit is captured as a signal, but the signal isn't yet feeding back fast enough to improve future predictions — which is precisely the Loop 1 problem I scored 2/5 in the data flywheel assessment. The Confidence UX work and the flywheel work are the same problem with two names.
+**What works today:** Users can edit and regenerate outputs in the prototype. The audit trail for overrides is designed in. Corrections are captured.
 
-**What I've learned from this exercise:** I'd been thinking about confidence UX as a design problem (how do we show uncertainty?) when it's actually a calibration problem (do we know how uncertain we are?). You can't legibly show what you can't measure, and you can't measure what your flywheel doesn't compound. The takeaway is that the confidence work I want to ship next quarter is blocked by the flywheel work I flagged two modules ago — and that's a sequencing issue I hadn't seen until I did this checklist.
+**What doesn't yet:** Those captured corrections aren't compounding into anything. Every edit is a signal, but the signal isn't fast enough to actually improve the next prediction. That's the same Loop 1 problem I flagged in my data flywheel work, scored 2/5. I'm now realising the Confidence UX problem and the flywheel problem are the same thing — I just hadn't connected them until this exercise.
 
-This is also why I scored my confidence in the bet as Medium in the three-axis diagnostic. The differentiator (engagement prediction) is real. The infrastructure that would make it defensible long-term — the closed learning loop — isn't yet.
+**The real takeaway:** I came into this thinking confidence UX was a design problem — how do we show uncertainty? It's actually a calibration problem — do we know how uncertain we are? You can't legibly show what you can't measure, and you can't measure what your flywheel doesn't compound.
 
+What that means in practice: the confidence work I want to ship next quarter is blocked by the flywheel work I should have been pushing on two modules ago. That's a sequencing problem I genuinely didn't see until I sat with this checklist.
+
+It also explains something I couldn't articulate cleanly before — why I scored my confidence in the bet as Medium in the three-axis diagnostic. The differentiator (engagement prediction) is real. But the infrastructure that would make it defensible long-term — the closed learning loop — isn't there yet. I knew it instinctively. This exercise gave me the words for it.
 
 
 **User control surface:**
 
 ## Reliability Contract
 
+Four promises we're making about Liquid Content. Each one has a target we can actually hit, a way to check we're hitting it, and a clear plan for what happens when we don't.
+
 | Metric | Target | Measurement | Alert Threshold |
 |--------|--------|-------------|-----------------|
-| Accuracy | | | |
-| Hallucination rate | | | |
-| Latency (p95) | | | |
-| Drift velocity | | | |
+| Accuracy | 90% on the golden dataset, checked weekly. Zero tolerance for fabrication on policy, personnel, legal, or financial content. | The golden dataset runs automatically every week as part of CI/CD. On top of that, the team audits 200 random production drafts every month against the same rubric. Results live on a shared dashboard the comms PM and AI engineering lead review together. | If we drop below 85% on the golden set, we audit the dataset before doing anything else — the world might have changed faster than the test cases. Any fabrication in a zero-tolerance category goes straight to a human queue. |
+| Hallucination rate | Under 1% across all outputs. Zero tolerance on fabricated executive quotes, policy claims, or financial figures. This is the Air Canada line — when the agent invents something, that invention becomes the company's commitment. | An LLM-as-judge scans every production output and flags anything that doesn't tie back to source material. Flagged outputs go into a daily human spot-check queue. We recalibrate the judge model monthly so its own biases don't drift. | If hallucinations cross 2% in any 7-day window, the model auto-rolls back to the last good version. We don't wait to investigate — we ship the previous version first, debug second. |
+| Latency (p95) | Under 2 seconds for single-format drafts. Under 8 seconds for full multi-format generation. Anything over 5 seconds on a single format is in the "losing users" zone. | Per-request logging in Datadog, PagerDuty wired to the on-call engineer. We review latency weekly alongside accuracy and hallucination, because slow generation is often a sign the model is retrying on content it isn't confident about. | If p95 stays above 5 seconds for more than 10 minutes, we page the on-call engineer. Speed problems are usually infrastructure problems — and a human will debug it faster than any automated rollback. |
+| Drift velocity | Less than 0.5% degradation every 4 weeks on the golden dataset. Less than 5% degradation month-over-month on engagement prediction accuracy. | The full golden dataset re-runs monthly against the current production model. A weekly embedding similarity check catches early drift. Every published campaign gets its predicted engagement compared to actual — calibration is tracked as a rolling 30-day metric. | More than 1% degradation in a 4-week window triggers a golden dataset audit, not a rollback. Drift usually means the world has changed, not the model. Rolling back would just ship yesterday's truth. |
 
 ## HITL Architecture
-<!-- When does a human step in? What's the escalation path? -->
 
-## Red-Team Findings
-*What failure mode did your partner find that you missed?*
+**When a human steps in:** Three triggers. The model's confidence falls below 70%. The content is sensitive — DEI, leadership transitions, layoffs, M&A, legal, safety, executive messages, or anything involving money. Or the user asks for a review themselves. Sensitive content always goes through a human, even if the model is 95% sure. Confidence isn't the same as appropriateness.
+
+**Who reviews:** It depends on the content. Medium-confidence, low-risk content (newsletters, manager comms) goes to a peer or comms lead. Sensitive content routes by category — Legal for compliance and M&A, HR for personnel and DEI, Comms lead for everything else. Crisis comms, regulatory disclosures, and anything affecting individual compensation skip the AI entirely. Those are human-only.
+
+**Whether corrections feed back into the model:** Captured today. Compounding tomorrow.
+
+Every override, edit, and reviewer correction is logged with a reason. The signals are being captured — but they're not yet flowing back into the model fast enough to actually improve future predictions. This is the same Loop 1 problem I flagged in my data flywheel work, scored 2/5.
+
+What needs to change: when a high-confidence prediction misses in production, that miss should automatically generate a candidate row for the golden dataset. When a Tier 3 reviewer corrects voice or tone, that correction should feed straight into the calibration layer. Right now neither of those things happens, which means HITL is doing the catching but the model isn't learning from the catch.
+
+Without that feedback loop, human review is a crutch — humans babysitting the AI forever, and the cost never coming down. With it, every correction makes the next prediction better, and the share of content needing review shrinks over time.
+
+This is the most important fix on the Liquid Content roadmap. Not the most visible one. But everything else — confidence UX, calibration, the engagement prediction story, the whole flywheel — depends on it.

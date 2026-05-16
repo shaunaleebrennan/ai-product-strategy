@@ -1,14 +1,14 @@
 # Compounding System Design
 
-*How Liquid Content learns from use — and where it doesn't yet.*
+*How Liquid Content learns from use — and where it doesn't yet. Liquid Content is the multi-format comms agent inside the Workvivo AI platform, powered by Workvivo AI alongside Zoom AI Companion.*
 
 ## Feedback Loops
 
 | Loop | Input | Output | Compounds? | Status |
 |------|-------|--------|-----------|--------|
-| **Recursive Learning** | Edits, regenerations, reviewer corrections, override rationales, post-publish engagement vs prediction misses | Better drafts, sharper voice match, more accurate engagement predictions | Y | **Broken** — we capture the signals. We don't yet learn from them. Flagged 2/5 in my data flywheel work back in Module 2. |
-| **Cross-Domain Transfer** | Engagement data, sentiment scores, reaction patterns, channel performance, frontline reach data, Zoom collaboration signals | Channel recommendations, send-time predictions, audience-fit confidence, voice calibration per persona | Y | **Active** — this is genuinely our strongest loop. Unily is a comms tool. We're a platform. Competitors structurally can't see what we see. |
-| **Network Intelligence** | Anonymised, aggregated patterns across customer orgs — what comms formats land in healthcare vs manufacturing, what onboarding cadence drives 30-day retention | Smarter defaults for new customers, industry-specific tone benchmarks, cross-customer "what works" patterns | Y | **Missing** — we haven't built this. Privacy gating isn't there yet, and honestly it shouldn't be until Loop 1 works. |
+| **Recursive Learning** | User feedback (thumbs up/down, free text), edits, regenerations, reviewer corrections, override rationales, post-publish engagement vs prediction misses | Better drafts, sharper voice match, more accurate engagement predictions | Y | **Broken** — we capture the signals. Workvivo AI explicitly collects user feedback for product improvement. But the signals don't reach the model fast enough to shift the next prediction. Flagged 2/5 in my data flywheel work back in Module 2. |
+| **Cross-Domain Transfer** | Engagement data, sentiment scores, reaction patterns, channel performance, frontline reach data, survey responses, Zoom collaboration signals via AI Companion | Channel recommendations, send-time predictions, audience-fit confidence, voice calibration per persona | Y | **Active** — this is genuinely our strongest loop. Liquid Content sits inside Workvivo AI, which sits inside the wider Workvivo platform. Compose feeds Ask feeds Employee Insights feeds Liquid Content. Unily is a comms tool. We're a platform with a comms feature. Competitors structurally can't see what we see. |
+| **Network Intelligence** | Anonymised, aggregated patterns across customer orgs — what comms formats land in healthcare vs manufacturing, what onboarding cadence drives 30-day retention | Smarter defaults for new customers, industry-specific tone benchmarks, cross-customer "what works" patterns | Y | **Missing** — we haven't built this. Privacy gating isn't there yet, and honestly it shouldn't be until Loop 1 works. Zoom's zero data retention policy with third-party model providers means the foundation is in place to build it safely. |
 
 **System health: 1 active / 1 broken / 1 missing.** One loop out of three is actually compounding today. That's the diagnostic, not a failure — the course framework explicitly says most rows on real-product audits come back broken or missing.
 
@@ -18,15 +18,15 @@ If I froze Liquid Content for 3 months — no updates, no model swaps, no improv
 
 Mostly yes. And that's the diagnostic, not the win.
 
-Cross-Domain Transfer would keep working because Workvivo keeps generating engagement data with or without the model improving. But Recursive Learning isn't compounding, so corrections aren't sharpening predictions over time. And Network Intelligence doesn't exist yet, so there's nothing to lose there.
+Cross-Domain Transfer would keep working because Workvivo keeps generating engagement and survey data with or without the model improving. But Recursive Learning isn't compounding, so corrections aren't sharpening predictions over time. And Network Intelligence doesn't exist yet, so there's nothing to lose there.
 
-The moat today is distribution and the platform's broader signal — not the loop. That's an honest answer, not a comfortable one. When the freeze test becomes "yes, accuracy would visibly slip without correction inflow," I'll know Loop 1 is finally alive.
+The moat today is distribution, the Zoom partnership, and the broader Workvivo AI platform signal — not the loop. That's an honest answer, not a comfortable one. When the freeze test becomes "yes, accuracy would visibly slip without correction inflow," I'll know Loop 1 is finally alive.
 
 ## The Broken Loop
 
 **Loop 1 — Recursive Learning.**
 
-Every edit, override, and reviewer correction is logged with a reason. The signals are captured. They just don't reach the model fast enough to shift the next prediction.
+User feedback is explicitly collected — per the Workvivo AI explainer, free-text feedback is used for product improvement. Every edit, override, and reviewer correction is logged with rationale. The signals are captured. They just don't reach the model fast enough to shift the next prediction.
 
 This is the same problem I flagged 2/5 in my data flywheel work back in Module 2, and the same problem that surfaced again in Module 4's confidence UX exercise. It's not three separate problems. It's one problem showing up everywhere I look.
 
@@ -44,31 +44,31 @@ This is the same problem I flagged 2/5 in my data flywheel work back in Module 2
 
 **How knowledge flows today:**
 
-Inside Liquid Content, the flow is actually pretty good. The agent can reach the company knowledge layer, employee directories, past campaigns, voice samples, engagement data, the comms calendar. That's the cross-domain loop doing what it's supposed to do — Workvivo's broader product signal feeds the comms agent in ways no competitor can match. Unily is a comms tool. Microsoft Copilot sees email and meetings. We see how people actually engage. That connectivity is the strongest part of the system.
+Inside Liquid Content, the flow is actually pretty good. The feature sits on the Workvivo AI platform, which sits inside the wider Workvivo product — so it has access to the company knowledge layer, employee directories, past campaigns, voice samples, engagement data, the comms calendar, and signals from Compose, Ask, Surveys, and Employee Insights. That's the cross-domain loop doing what it's supposed to do. Unily is a comms tool. Microsoft Copilot sees email and meetings. We see how people actually engage with everything. That connectivity is the strongest part of the system.
 
 **Where it silos:**
 
-Comms manager corrections never reach the model. A comms manager edits a draft, hits publish, and the edit goes into the audit trail. The team learns something about the AI. The AI learns nothing about the team. That's the Loop 1 problem dressed up as a connectivity problem.
+Comms manager corrections never reach the model fast enough. A comms manager edits a Liquid Content draft, hits publish, and the edit goes into the audit trail. The team learns something about the AI. The AI eventually learns from the feedback, but not at the speed it needs to. That's the Loop 1 problem dressed up as a connectivity problem.
 
-Engagement data and predictions don't talk to each other daily. The broader analytics know how content actually performed. Liquid Content has predictions about how it will perform. The closing of that loop — "we said 87%, you got 64%, here's what that taught us" — isn't running at the model level yet.
+Engagement data and predictions don't talk to each other daily. The broader Workvivo analytics know how content actually performed. Liquid Content has predictions about how it will perform. The closing of that loop — "we said 87%, you got 64%, here's what that taught us" — isn't running at the model level yet.
+
+Liquid Content and the other Workvivo AI features don't yet share learning signals as tightly as they could. Ask, Compose, Liquid Content, Employee Insights — each is improving. They aren't yet compounding into each other. When Ask consistently surfaces a policy question that doesn't have a clear answer in the knowledge base, that signal should flow back to Liquid Content as a content gap to fill — and to Employee Insights as a sentiment indicator. Today, those features ship separately rather than learning together.
 
 Cross-customer patterns don't transfer. A healthcare customer and a manufacturing customer send fundamentally different comms. Today both start from the same baseline. We haven't built the privacy-gated aggregation layer that would let us learn across the customer base without leaking anything specific.
-
-Some of the richest signal sits on Zoom's side, not ours. Liquid Content runs on Zoom AI Companion's model layer. Meeting summaries, document context, collaboration patterns are upstream. The architecture connects in principle. We're not yet tapping it in practice.
 
 The pattern across all four: the data exists almost everywhere we need it. The connections don't.
 
 ## Governance Policy
 
-**Scope:** All AI-generated and AI-assisted content produced by Liquid Content for internal employee communications. Covers drafting, channel recommendation, send-time prediction, multi-format generation, voice persona work. Doesn't cover Workvivo's broader engagement analytics or the underlying Zoom AI Companion model layer — Zoom governs those separately.
+**Scope:** All content generated by Liquid Content — the multi-format comms agent inside the Workvivo AI platform. Covers drafting, channel recommendation, send-time prediction, multi-format generation, voice persona work. Sits within the broader Workvivo AI governance posture (which also covers Compose, Surveys, Ask, and Employee Insights). The underlying Zoom AI Companion model layer is governed separately by Zoom under its federated AI architecture.
 
 **Autonomy boundaries:**
 
-- **Drafting anything — auto.** The agent can draft whatever a user asks for, without approval. Drafting is read-only. Nothing reaches an employee until a human publishes.
+- **Drafting anything — auto.** Liquid Content can draft whatever a user asks for, without approval. Drafting is read-only. Nothing reaches an employee until a human publishes.
 - **Publishing low-risk content — author approves.** Recognition posts, event reminders, routine announcements. The author hits publish. No separate reviewer needed.
 - **Publishing sensitive content — gated.** DEI, leadership transitions, layoffs, M&A, legal, safety, executive messages, financial. Mandatory Tier 3 review by HR, Legal, or Comms lead depending on category. Cannot be overridden.
 - **Publishing unverifiable or market-moving content — refused.** Acquisition rumors, financial authorisations, content based purely on speculation. The agent declines to generate at all. Hard rule. Already covered in golden dataset rows 3, 6, 7.
-- **Scheduling — auto with a cap.** Agent can schedule content within a 7-day window. Anything beyond that needs human confirmation.
+- **Scheduling — auto with a cap.** Liquid Content can schedule content within a 7-day window. Anything beyond that needs human confirmation.
 
 **Escalation triggers:**
 
@@ -93,18 +93,30 @@ The principle: confidence and appropriateness aren't the same thing. Sensitive c
 
 **Regulatory exposure:**
 
-- **EU AI Act:** Limited risk. We generate internal employee comms, which the Act treats as productivity tooling rather than high-stakes decision-making. The trigger for high-risk would be content that materially affects employment, benefits, or compensation — which is exactly why those categories are excluded from agent autonomy entirely.
-- **GDPR:** Applies. Employee names, roles, contact details, engagement behavior all count as personal data. We minimise PII in training. Lawful basis is legitimate interest, with customer-org level opt-out.
-- **SOC 2 Type II:** In place via Zoom. Log retention, access control, incident response all sit inside that boundary.
-- **HIPAA:** Matters for healthcare customers. Shared memory is hard-disabled for healthcare orgs. Per-user memory requires explicit Business Associate Agreement coverage.
+- **Data residency:** Customer data is processed in the customer's chosen region — US or EU. EU customers' AI features are powered by Zoom-hosted models plus Anthropic models via Amazon Bedrock on AWS. This is a real procurement advantage, not boilerplate — EU buyers ask for it by name.
+
+- **No training on customer content.** Workvivo does not use customer content to train Zoom's or third-party AI models. This is a published commitment, not aspiration. It's also the one line in the Workvivo AI explainer that closes the most enterprise deals.
+
+- **Zero data retention with third-party providers.** Zoom has zero data retention policies in place with third-party model providers (including Anthropic). Customer prompts and outputs are not retained by model providers, with limited exceptions for trust and safety (e.g. CSAM detection). This is genuinely differentiated — most consumer AI tools can't claim this.
+
+- **Workvivo audit retention:** Customer inputs and outputs are stored in the Workvivo audit database for 12 months by default to fulfil data access requests, or shorter at customer election.
+
+- **EU AI Act:** Limited risk. Liquid Content generates internal employee comms, which the Act treats as productivity tooling. The trigger for high-risk would be content that materially affects employment, benefits, or compensation — which is exactly why those categories are excluded from agent autonomy entirely.
+
+- **GDPR:** Applies. Employee names, roles, contact details, engagement behaviour all count as personal data. Lawful basis is legitimate interest, with customer-org level opt-out.
+
+- **SOC 2 Type II:** In place via the Zoom platform. Log retention, access control, incident response all sit inside that boundary.
+
+- **HIPAA:** Matters for healthcare customers. Shared memory hard-disabled for healthcare orgs. Per-user memory requires explicit Business Associate Agreement coverage.
+
 - **Sector-specific:** Financial services — anything referencing trading, earnings, or M&A escalates regardless of confidence. Education — comms involving minors trigger extra review.
 
 ## Agent Topology
 
-Liquid Content isn't a chain of independent agents. It's one generator doing several different jobs. But the jobs are different enough that it's worth governing them as if they were separate agents.
+Liquid Content isn't a chain of independent agents. It's one feature inside Workvivo AI doing several different jobs. But the jobs are different enough that it's worth governing them as if they were separate agents.
 
 **Draft Generator:**
-- *Can do:* generate articles, video scripts, podcast intros, social posts, recognition posts, manager comms, event reminders. Pull from the company knowledge layer. Apply voice personas. Surface predicted engagement and recommended send-time with reasoning.
+- *Can do:* generate articles, video scripts, podcast intros, social posts, recognition posts, manager comms, event reminders. Pull from the company knowledge layer (via the Workvivo AI platform). Apply voice personas. Surface predicted engagement and recommended send-time with reasoning.
 - *Can't do:* publish anything. Send anything. Modify source material. Authorise transactions, approvals, or commitments. Generate Tier 4 content (crisis comms, regulatory disclosures, individual compensation).
 - *Approval:* the author who wrote the brief approves the draft. Sensitive content needs an additional reviewer signed-off by category.
 
@@ -127,7 +139,7 @@ Run on Workvivo's own internal stack. Snapshot, not exhaustive. Some numbers are
 | Tool | Owner | Risk Level | Decision |
 |------|-------|-----------|----------|
 | ChatGPT Plus / Team (personal subscriptions) | Marketing, Comms, Sales | H | Govern — Liquid Content covers comms; Zoom AI Companion covers general use. Allow-list specific use cases. No PII inputs. |
-| Claude Pro (personal subscriptions) | Product, Engineering, Marketing | H | Govern — same as ChatGPT. Governed alternative plus use-case allow-list. |
+| Claude Pro (personal subscriptions) | Product, Engineering, Marketing | H | Govern — Anthropic is a Workvivo subprocessor via Zoom, so Claude usage isn't categorically banned. But personal subscriptions don't carry the same DPA protections. Push usage into governed alternatives. |
 | Notion AI | Product, Operations | M | Keep — DPA in place, contained to internal docs, no customer data routed through. |
 | Perplexity Pro (personal) | Marketing, Comms, Sales | M | Govern — useful for research, but no DPA on personal accounts. Corporate-managed only. Ban personal subscriptions for work use. |
 | Meeting AI tools — Granola, Otter, Fireflies | Sales, Customer Success | H | Govern — these recordings often contain customer data. Standardise on Zoom AI Companion's meeting summary (already in-stack, already DPA'd). Ban personal recording tools. |
@@ -145,7 +157,4 @@ Run on Workvivo's own internal stack. Snapshot, not exhaustive. Some numbers are
 
 **The Samsung lesson, applied to us:** Workvivo's customers are dealing with shadow AI right now. It's the tension at the heart of our launch narrative — "employees default to ChatGPT, Claude, DeepSeek." The fact that we're running this audit on our own stack first is what gives us the credibility to sell the answer. We can't tell customers their AI needs a home while our own AI use is scattered. The audit isn't compliance theatre. It's proof we live the story we're selling.
 
-
-
-
-
+The unfair advantage in the pitch: Liquid Content runs on Workvivo AI, powered by Zoom AI Companion's federated architecture — with zero data retention at the model provider level and a published commitment not to train on customer content. Most of the tools on the list above can't say that. That contrast is the GTM story — Level 3 governance not as compliance burden, but as the reason buyers choose us.

@@ -23,6 +23,48 @@ Dataset health
 
 ## Confidence UX Design
 
+**Approach:** Legibility before precision: Liquid Content shows confidence as a composite signal, surfaces the data driving each prediction, and routes sensitive content to human reviewers. The design is sound. The honest gap — flagged earlier in my data flywheel assessment — is that the learning loop behind the confidence layer isn't yet closed. Today the product predicts. It doesn't yet learn from when its predictions are wrong.
+
+**Confident (>90%):** Designed behaviour: auto-publish eligible. Predictions shown inline with reasoning ("based on similar campaigns in your org"). Sources cited.
+
+Designed behaviour: auto-publish eligible. Predictions shown inline with reasoning ("based on similar campaigns in your org"). Sources cited.
+
+Current reality: the prediction is shown, but the "why" is thin. Users see a score with limited explanation of what drove it — which is exactly the black-box pattern the course warns against. This is the first thing to fix before launch, and it sits upstream of the data flywheel gap I flagged in Loop 1: we can't legibly show what drove a prediction if we're not capturing the corrections that would teach us what drives accuracy.
+
+**Uncertain (50-90%):** Designed behaviour: predictions shown with explicit hedges. Specific dimensions of uncertainty flagged. User confirmation before publish.
+
+Designed behaviour: predictions shown with explicit hedges. Specific dimensions of uncertainty flagged. User confirmation before publish.
+
+Current reality: hedges exist, but they're generic ("results may vary") rather than specific ("we have less signal on this audience segment"). The agent isn't yet learning preferences either — flagged as Loop 2 in my flywheel work, score 2/5 — so the hedges can't yet name what's actually uncertain. The user is left to guess.
+
+**Not confident (<50%):** Designed behaviour: predictions shown with explicit hedges. Specific dimensions of uncertainty flagged. User confirmation before publish.
+
+Designed behaviour: predictions presented as suggestions. For sensitive categories (DEI, leadership transitions, layoffs, financial), hard escalation to human review regardless of override. For unverifiable content (acquisition rumors, financial authorization), agent refuses to generate.
+
+Current reality: the refusal logic for high-risk content is the strongest piece — covered in the golden dataset adversarial rows. The weaker piece is the in-between zone: content that's uncertain but not clearly sensitive. Without a closed learning loop, the agent can't yet distinguish "uncertain because the content is new" from "uncertain because the model is wrong." Both look the same to the user today.
+
+**User control surface:** 
+
+Two of the four user controls are real today. Two are aspirational — and the aspirational ones are the exact gaps I flagged earlier in the course.
+
+What works: users can edit and regenerate outputs in the prototype. The audit trail for overrides is designed in, even if not yet built.
+
+What doesn't yet: corrections don't feed back into the model. Every edit is treated as a one-time user action, not a signal — which is precisely the Loop 1 problem I scored 2/5 in the data flywheel assessment. The Confidence UX work and the flywheel work are the same problem with two names.
+
+What I've learned from this exercise: I'd been thinking about confidence UX as a design problem (how do we show uncertainty?) when it's actually a calibration problem (do we know how uncertain we are?). You can't legibly show what you can't measure, and you can't measure what your flywheel doesn't capture. The takeaway is that the confidence work I want to ship next quarter is blocked by the flywheel work I flagged two modules ago — and that's a sequencing issue I hadn't seen until I did this checklist.
+
+This is also why I scored my confidence in the bet as Medium in the three-axis diagnostic. The differentiator (engagement prediction) is real. The infrastructure that would make it defensible long-term isn't yet.
+
+- Users see AI reasoning / drivers
+- Users correct & override outputs
+- Corrections feed back into the model / dataset
+- Users adjust the confidence threshold _(not yet)_
+
+
+
+
+
+
 **Approach:** show uncertainty / tiered confidence / human-in-loop trigger
 
 **High confidence (>90%):**

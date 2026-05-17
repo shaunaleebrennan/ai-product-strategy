@@ -171,5 +171,3 @@ It's available to Workvivo customers if requested, but **it's not Workvivo's pri
 That distinction matters for the GTM motion. Workvivo's sales team leads with HQ and upgrades into HQ+ when AI usage justifies it. HQ+ Enterprise / ZoomMate enters the conversation only when a customer explicitly asks for agentic execution across their connected stack — and even then, the deal often gets co-quarterbacked with Zoom's enterprise team because ZoomMate sits inside the broader Zoom agentic platform, not inside Workvivo's product surface.
 
 **Model:** Hybrid tier-based seat pricing + consumption-based overage. Customers buy seats at the tier that matches the user's expected AI usage. Each seat includes a credit allocation. Usage above the allocation is PAYG at per-action rates.
-
-**

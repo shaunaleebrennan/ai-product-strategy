@@ -35,7 +35,7 @@
 | **Connected intelligence from HRIS, L&D, and other sources** — deeper People Intelligence by integrating workforce data beyond engagement: skills, learning paths, role transitions, retention signals. Maps engagement to other key initiatives (DEI, learning outcomes, manager development) for a complete view of company and people health. | Cross-source insight depth (signals integrated per customer). HR / L&D leader adoption rate. Correlation accuracy between engagement signals and HR outcomes (attrition, performance, learning completion). | L |
 | **Loop 1 fully closed — Recursive Learning compounds** (corrections feed model improvement at the speed the product needs; freeze test answer flips from "we'd still win" to "accuracy would visibly slip") | AI tier blended margin trending toward 40%+ (from ~6% at launch). Override rate on medium-confidence predictions: ↓ quarter-over-quarter. Freeze test outcome (annual reassessment). | L |
 | **Cross-Domain Transfer fully automated between pillars** — three pillars share learning signals without human routing | % of cross-pillar handoffs automated (vs human-routed). Composite intelligence demonstrably better per quarter. | L |
-| **NRR / retention uplift attributable to AI** — proving the bet works at the commercial level | NRR delta on HQ-AI cohorts vs non-AI baseline. Gross retention on AI customers (target: maintain 96%+). | L |
+
 
 ---
 

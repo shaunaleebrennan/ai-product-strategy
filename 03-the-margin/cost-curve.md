@@ -1,256 +1,261 @@
-# Cost Curve & Pricing Strategy — AI Campaign Orchestrator / Liquid Content
+# Cost Curve & Pricing Strategy — Workvivo HQ
 
-## Product Framing
+**Pricing assumption:** All numbers in this model use list pricing. Beta and early-access customers may have negotiated terms, but we model on list for stress-testing margin and the broader strategy. Workvivo platform list = $4.5 PUPM; HQ tier list = $3 PUPM AI add-on; HQ+ list = $6.5 PUPM AI add-on; HQ+ Enterprise = $20 PUPM AI add-on (see ZoomMate note in Pricing Model section).
 
-- **🏆 Leader:** The feature they come for: **Campaign Orchestration**
-- **🍟 Filler:** Nice add, bumps ARPU: **Catch Me Up**
-- **💀 Killer:** Premium AI feature: **Agentic Liquid Content** — the ability to create multiple campaign variants and content pieces from one prompt. This is risky because it can create too many options, too much user error, repeated re-dos, and unpredictable usage.
+## Product Framing — Leader / Filler / Killer
 
-**Killer usage %:** Approx. **30% of active Campaign Orchestrators** are likely to actively use killer features in a given month. This is not something every customer is asking for, but it is complex, expensive, and risky to roll out to everyone, so make sense in the premium bundle.
+- **🏆 Leader (the AI surface they come for):** Ask HQ — AI search and retrieval across the company knowledge layer. This is the AI feature buyers compare against Glean ($45/user) and Microsoft Copilot ($30/user). It's the every-employee reflex for "where do I find...?" and the procurement-killer when sized against alternatives.
+- **🍟 Filler (bumps ARPU and drives daily habit, but not the buy reason):** Catch Me Up (the morning surface that makes HQ daily-active), AI Compose Posts, AI Page Builder, AI Journey Builder, AI Podcasts, AI Livestream Summaries, Seer AI Summaries. These deepen the experience and make HQ feel AI-native, but they're not what closes the deal — Ask HQ closes the deal.
+- **💀 Killer (premium, complex, risky):** Agentic Liquid Content, agentic execution across connected systems (HRIS approval workflows, multi-step task completion), Deep Research, Custom Avatar video generation. These sit in HQ+ Enterprise / ZoomMate — Workvivo's premium upgrade path, not its primary sales motion. Expensive per-use, unpredictable consumption, and high-stakes when they go wrong — which is why they sit in the agentic tier with stricter routing.
 
-**Bundle or premium tier:**  
-Agentic Liquid Content should **not** be included in the blanket **$3 AI Companion** package. It should be included only in the **$6 Agentic AI Companion Bundle** package.
+**Killer usage %:** Approximately 20–30% of contracted users will actively use killer features in a given month. Comms managers using Agentic Liquid Content, ops leads triggering cross-system agentic workflows, executives commissioning deep research. Not everyone needs these. Bundling them into the base tier would price out customers who don't.
 
-**70% rule:** If Killer usage is below 70%, it should not sit in the core bundle. In this case, Agentic Liquid Content belongs in the premium AI tier.
+**70% rule applied:** If a feature is touched by >70% of contracted users, it belongs in HQ. Ask HQ, Catch Me Up, AI Compose Posts — all >70%. They're in HQ. Agentic Liquid Content, agentic HRIS workflows, deep research — all <30%. They're in HQ+ Enterprise / ZoomMate.
 
 ---
 
-# Cost Model
+## Cost Model
 
-## Assumption
-The core SaaS platform is priced at **$4 per contracted user per month.**
+### Assumption — workforce composition and pricing
 
-AI Companion is priced at a blanket **$3 per contracted user per month** bringing the combined Core SaaS + AI Companion price to $7 PUPM.
+Workvivo HQ prices the AI tier by usage intensity, layered on top of the core platform price. The typical customer splits roughly 80/20:
 
-Core Campaign Orchestrator is included in AI Companion, but only a small number of comms, HR, or admin users are expected to use it directly.
+- **80% of the workforce on HQ** — light AI use. Search a few times a week, occasional workflow trigger. Mobile-first, often deskless. Priced for reach.
+- **20% of the workforce on HQ+** — heavier AI use. Daily search, multiple workflows, regular content generation, conversational queries. Priced for value.
 
-Agentic / Liquid Content is not included in the $3 AI Companion package. It is included in the **$6 Premium Agentic AI** package.
+Customer-facing combined pricing at list:
 
-Expected active Comms Orchestrator users by customer size:
+| Tier | Platform (list) | AI tier (list) | Combined |
+|---|---:|---:|---:|
+| HQ | $4.5 | $3.0 | $7.5 PUPM |
+| HQ+ | $4.5 | $6.5 | $11.0 PUPM |
+| HQ+ Enterprise (ZoomMate) | $4.5 | $20.0 | $24.5 PUPM |
 
-| Segment | Employee Range | Expected Active Comms Orchestrator Users |
+That 80/20 split is the strategic core of the pricing model. Microsoft Copilot prices the whole workforce at $30/user (Copilot license only — on top of M365 base). Workvivo prices the bulk of the workforce at $7.50 combined and the AI-heavy minority at $11 combined — which is how we reach everyone for a fraction of what desk-only competitors charge.
+
+### Per-action unit costs
+
+Customer-facing per-credit prices (overage rates above included credits). Base tier prices include allocated credits; overage is PAYG.
+
+| Action | Customer price | Credits | Cost driver |
+|---|---:|---:|---|
+| Search query | $0.05 | 5 | Lightweight retrieval, mostly small models |
+| Workflow run | $0.10 | 10 | Standard model path |
+| Productivity — Edit | $0.10 | 10 | Standard model, lower-token output |
+| Productivity — Create | $0.50 | 50 | Frontier model, higher-token output |
+| Translation (per hour) | $0.50 | 5 | Standard model, language-specific routing |
+| Custom Avatar (per minute) | $0.25 | 25 | Heavy compute, video generation |
+| Deep Research | $2.50 | 250 | Frontier model, multi-step reasoning, long context |
+| Agentic Delivery (Claw) | $0.05 (TBC) | 5 | Cross-system execution layer |
+
+### HQ tier cost model (per user / month at planned usage)
+
+HQ includes Search, Workflows, and Agentic Retrieval. Lightweight AI surface, mobile-first.
+
+| Action | Usage / month | Credits | Modelled COGS |
+|---|---:|---:|---:|
+| Search | 20 queries | 100 | $1.00 |
+| Workflows | 15 runs | 150 | $0.90 |
+| **Total at planned usage** | — | **250** | **~$1.90 modelled COGS** |
+
+At a $3 PUPM HQ tier price, this yields ~37% AI gross margin at planned usage.
+
+### HQ+ tier cost model (per user / month at planned usage)
+
+HQ+ adds Conversation, Productivity (Create + Edit), and Delivery to the HQ surface. Full AI surface.
+
+| Action | Usage / month | Modelled COGS |
 |---|---:|---:|
-| Small org | 1,000–5,000 employees | 1–3 users |
-| Mid-market | 5,000–50,000 employees | 3–5 users |
-| Enterprise | 50,000+ employees | 5–10 users |
+| Search | 20 queries | $1.00 |
+| Workflows | 15 runs | $0.90 |
+| Productivity — Edit | 16 edits | $1.60 |
+| Productivity — Create | 4 creations | $2.00 |
+| **Total at planned usage** | — | **~$5.50 modelled COGS** |
 
-One active Comms Orchestrator user performs approximately **20 paid AI content actions per month**:
+At a $6.50 PUPM HQ+ tier price, this yields ~15% AI gross margin at planned usage — tighter than HQ. HQ+ relies on consumption ceilings and selective frontier-model routing to defend margin. Translation, Custom Avatar, and Deep Research are not in base HQ+ usage — those are PAYG above the included credit pool or unlocked at the HQ+ Enterprise / ZoomMate tier.
 
-- 4 net-new campaign creations
-- 16 edits / regenerations
+### Blended COGS model (per typical customer)
 
-Translation has been removed from this model to keep the cost curve focused on Campaign Orchestration and Liquid Content.
+Mid-market customer profile: 25,000 employees, 80/20 split (20,000 on HQ + 5,000 on HQ+).
+
+| Tier | Users | AI revenue PUPM | Monthly AI revenue | Modelled AI COGS | AI gross margin |
+|---|---:|---:|---:|---:|---:|
+| HQ | 20,000 | $3.00 | $60,000 | $38,000 | 36.7% |
+| HQ+ | 5,000 | $6.50 | $32,500 | $27,500 | 15.4% |
+| **Blended AI tier** | **25,000** | — | **$92,500** | **$65,500** | **29.2%** |
+
+Adding the platform layer (list $4.5 PUPM, ~$0.80 platform COGS, ~82% platform margin):
+
+| Layer | Blended monthly revenue | Blended monthly COGS | Blended margin |
+|---|---:|---:|---:|
+| Platform (list $4.5 × 25,000) | $112,500 | $20,000 | 82% |
+| AI tier | $92,500 | $65,500 | 29% |
+| **Combined customer** | **$205,000** | **$85,500** | **58%** |
+
+Total customer-level gross margin at list pricing is ~58% blended — materially lower than legacy 82% SaaS margins, but the AI tier is a pure expansion layer on top of an already-margin-rich platform. The 29% AI-tier margin is the honest story for AI economics; the 58% combined margin is the honest story for total customer economics.
+
+### Enterprise customer benchmark — illustrative
+
+A representative enterprise customer scenario: 512,000 employees, 80% on HQ (409,600) / 20% on HQ+ (102,400). At launch, contracted at HQ only — 100% HQ penetration, HQ+ penetration 0%, blended 80% of the total workforce.
+
+All numbers assume list pricing throughout: $4.5 platform + $3 HQ AI tier = $7.5 combined PUPM.
+
+| Metric | Value |
+|---|---:|
+| Contracted HQ users | 409,600 |
+| Combined list price PUPM (platform + HQ AI tier) | $7.50 |
+| **Monthly contract value at list** | **$3,072,000** |
+| **Annual contract value at list** | **$36,864,000** |
+| — of which platform revenue (at $4.5 PUPM) | $22,118,400 |
+| — of which AI tier revenue (at $3.0 PUPM) | $14,745,600 |
+
+The AI tier alone is ~$14.7M ARR — large enough to justify the entire AI engineering investment several times over (see Break-Even Math below). The combined contract approaches $37M ARR at full list, with future upside from HQ+ upgrades as AI usage matures and PAYG overages on heavy users.
+
+This is the proof of the pricing thesis. Reaching the frontline 80% at $3 AI list unlocks revenue that desk-only AI tools cannot capture — Microsoft Copilot at $30/user (Copilot license alone) would price out the 80% frontline majority of this deal.
 
 ---
 
-## Active User Cost Model
+## Cascading Strategy
 
-| Feature | Action | Unit Cost | Credits | Monthly Usage | Monthly Cost |
-|---|---|---:|---:|---:|---:|
-| Productivity — Create | 1 doc / campaign creation | $0.50 | 50 | 4 | $2.00 |
-| Productivity — Edit | 1 doc edit / analyze | $0.10 | 10 | 16 | $1.60 |
-| **Total feature-level usage cost** |  |  |  | **20 paid content actions** | **$3.60** |
+**AI orchestration layer:** Zoom AI Companion 3.0.
 
----
+**Model approach:** Workvivo AI requests are routed through Zoom AI Companion 3.0's federated AI architecture. Rather than hard-coding a single model provider, requests are routed to the most appropriate path based on task complexity, latency, cost, and quality.
 
-## Cost Category Breakdown
-
-| Cost Category | Per Active Comms Orchestrator User / Month | Notes |
-|---|---:|---|
-| Inference — primary model, advanced creation path | $2.00 | Frontier or higher-quality model used for Productivity — Create. Main generation cost for building campaigns and creating net-new content. Create actions use more tokens and require higher-complexity reasoning than edits. |
-| Inference — standard edit / regeneration path | $1.60 | Small or mid-tier model supports editing, rewriting, summarizing, analyzing, and improving content. These tasks are less complex than create actions and should not require the frontier model by default. |
-| Infrastructure | $0.05 | Permissions, observability, job queues, logging, orchestration, and rate limits. |
-| Data / storage | $0.05 | Prompt context, campaign metadata, document metadata, embeddings, cached outputs, and audit history. |
-| Human-in-the-loop | $1.00 | QA sampling, content safety review, customer onboarding calibration, tone checks, and evaluation of generated outputs. |
-| **Total AI COGS** | **$4.70** | Fully loaded cost per active Comms Orchestrator user per month, excluding translation and incremental Agentic Liquid Content usage. |
-
-**Human-in-the-loop note:** Human-in-the-loop is modeled as $1.00 per active creator/month for early-stage QA, calibration, and safety review. Over time, this should decline or move from variable COGS to a customer onboarding / operating cost assumption.
-
----
-
-## Blended COGS Model
-
-Because AI Companion is priced across the full employee base, Comms Orchestrator COGS should be blended across all contracted users.
-
-**Formula:**
-| Segment | Example Org Size | Active Comms Orchestrator Users (average) | Monthly AI Companion Revenue at $3 PUPM | Enterprise AI Search COGS | Comms Orchestrator COGS | Total AI COGS | Gross Profit After AI COGS | AI Companion Standalone Gross Margin |
-|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| Small org | 1,000 | 2 | $3,000 | $1,000 | $9.40 | $1,009.40 | $1,990.60 | 66.4% |
-| Mid-market | 25,000 | 5 | $75,000 | $25,000 | $23.50 | $25,023.50 | $49,976.50 | 66.6% |
-| Enterprise | 500,000 | 10 | $1,500,000 | $500,000 | $47.00 | $500,047.00 | $999,953.00 | 66.7% |
-
-**Key takeaway:** Key takeaway: Comms Orchestrator is not the primary margin risk in the $3 AI Companion package. It costs approximately $4.70 per active creator, which blends to only $0.0094 per contracted user in a 1,000-person customer with 2 active creators. The main COGS driver is Enterprise AI Search, which costs approximately $1.00 per contracted user/month if every user performs 20 searches.
-
-## Enterprise Creator Sensitivity
-
-The base enterprise assumption is 5–10 active Comms Orchestrator users. This may be conservative for global organizations with central, regional, HR, frontline, and local comms teams.
-
-| Enterprise Org Size | Active Comms Orchestrator Users | Monthly Comms Orchestrator COGS | Blended Comms Orchestrator COGS / Contracted User |
-|---:|---:|---:|---:|
-| 500,000 | 10 | $47.00 | $0.0001 |
-| 500,000 | 50 | $235.00 | $0.0005 |
-| 500,000 | 100 | $470.00 | $0.0009 |
-| 500,000 | 500 | $2,350.00 | $0.0047 |
-
-**Interpretation:** Even with more active creators, standard Comms Orchestrator remains a small blended cost. The risk is not standard creation usage; it is repeated regeneration, creator sprawl, and Agentic Liquid Content usage.
-
-
-# Cascading Strategy
-
-**AI orchestration layer:**  
-Zoom AI Companion 3.0.
-
-**Model approach:**  
-Workvivo AI requests are routed through Zoom AI Companion 3.0’s federated AI architecture. Instead of hard-coding one named model provider into the product strategy, requests should be routed to the most appropriate Zoom AI Companion model path based on task complexity, latency needs, cost, and quality.
-
-**Lightweight / triage model path:**  
-Zoom proprietary Small Language Models, or equivalent lightweight model paths within Zoom AI Companion 3.0.
-
-Used for:
-
-- Intent classification
-- Request routing
-- Simple edits
-- Tone changes
-- Short rewrites
+**Lightweight / triage path** (Zoom proprietary Small Language Models):
+- Intent classification, request routing
+- Simple edits, tone changes, short rewrites
 - Basic summaries
-- Detecting whether escalation is needed
+- Search query classification
 
-**Standard model path:**  
-Zoom AI Companion 3.0 standard model path for most everyday content work.
+**Standard path** (Zoom AI Companion 3.0 standard models):
+- Most everyday content work — edits, rewrites, regenerations
+- Standard first drafts and campaign outlines
+- Catch Me Up summaries
+- Ask HQ retrieval and answering
 
-Used for:
+**Advanced / reasoning path** (Zoom AI Companion 3.0 advanced models + NVIDIA Nemotron-based reasoning):
+- Liquid Content multi-format generation
+- Agentic execution across connected systems
+- Deep Research
+- Custom Avatar generation
+- Long-form executive comms
 
-- Edits
-- Rewrites
-- Regenerations
-- Summaries
-- Standard first drafts
-- Campaign outline support
-- Routine content improvements
-- Campaign orchestration
-- tone of voice
+**Routing rules:** Every request is classified first. Simple edits, tone changes, and routine retrieval stay on the lightweight or standard path. Net-new creation starts on standard and escalates only when content is long-form, executive-facing, addressed to 500+ employees, spans 3+ channels, or requires multiple audience variants.
 
-**Advanced / reasoning model path:**  
-Zoom AI Companion 3.0 advanced model path, including Zoom’s larger federated models and NVIDIA Nemotron-based reasoning capabilities where appropriate.
+**Agentic routing rule:** Agentic Liquid Content and agentic execution are only available in HQ+ Enterprise / ZoomMate. They use the advanced path with stricter controls because they can generate multiple variants, trigger more re-dos, and create unpredictable usage.
 
-Used for:
--  Liquid Content
--  Agentic execution 
+**Expected cascade ratio:** 20% lightweight / 65% standard / 15% advanced.
 
-**Routing rule:**  
-Every request is classified first through Zoom AI Companion 3.0. Simple edits, tone changes, summaries, and rewrites stay on the lightweight or standard model path. Net-new campaign creation starts on the standard model path and escalates only when the content is long-form, executive-facing, addressed to 500+ employees, spans 3+ channels, or requires multiple audience variants.
+---
 
-**Agentic routing rule:**  
-Agentic Liquid Content is only available in the **$6 Premium AI** package. It should use the advanced / reasoning model path and stricter controls because it can generate multiple campaign variants, trigger more re-dos, and create unpredictable usage.
+## Pricing Model
 
-**Expected cascade ratio:**  
-20% lightweight model path / 65% standard model path / 15% advanced model path.
+### Tier structure (AI tier add-on, on top of $4.5 platform list)
 
+| AI Tier | Price PUPM (AI add-on) | Combined with platform | Above-threshold | Includes |
+|---|---:|---:|---|---|
+| **HQ** | $3.0 | $7.5 | PAYG via credits | Search, Workflows, Agentic Retrieval. Lightweight AI surface for the frontline majority. |
+| **HQ+** | $6.5 | $11.0 | PAYG via credits | Everything in HQ + Conversation, Productivity (Create + Edit), Delivery. Full AI surface for AI-heavy users. |
+| **HQ+ Enterprise (ZoomMate)** | $20.0 (with 2,200 credits upfront) | $24.5 | PAYG | Everything in HQ+ + Deep Research, Custom Avatar, Agentic execution across connected systems. For power users running multi-step agentic workflows. |
 
-# Pricing Model
+### A note on HQ+ Enterprise
 
-**Current pricing for AI Companion:** AI Companion is priced at a blanket $3 per contracted user per month.
+HQ+ Enterprise at $20 PUPM is functionally Zoom's complete **ZoomMate** application with full agentic scope — cross-system execution, multi-step workflows, deep research, custom avatar generation, and the broader Zoom agentic surface area.
 
-**Current pricingfor Agentic AI Companion:** Agentic AI Companion is priced at a premium of $6 per contracted user per month.
+It's available to Workvivo customers if requested, but **it's not Workvivo's primary sales motion**. Our commercial focus is HQ ($3 AI tier) and HQ+ ($6.5 AI tier), where the EX-native value sits and where Workvivo's product investment is concentrated. ZoomMate is the Zoom-platform extension for customers who want full agentic capabilities on top of their HQ deployment — same federated AI architecture, broader scope, Zoom-led roadmap.
 
-**Model:** Two-tier blanket seat-based pricing, with PAYG when ceiling is reached.
+That distinction matters for the GTM motion. Workvivo's sales team leads with HQ and upgrades into HQ+ when AI usage justifies it. HQ+ Enterprise / ZoomMate enters the conversation only when a customer explicitly asks for agentic execution across their connected stack — and even then, the deal often gets co-quarterbacked with Zoom's enterprise team because ZoomMate sits inside the broader Zoom agentic platform, not inside Workvivo's product surface.
 
-**Tier	Price	Includes**
-AI Companion	$3 PUPM	Core Comms Orchestrator, Productivity Edit, limited Productivity Create, and Catch Me Up
-Premium AI	$6 PUPM	Everything in AI Companion, plus Agentic Liquid Content and higher-value AI creation capabilities
-
-**TWhy this structure:**T Workvivo AI pricing has two commercial motions, both taking a hybrid seat-based and consumption-based pricing model.
-
-Seat-based pricing maps to how Workvivo is already sold and keeps the commercial model simple for customers. It works for Campaign Orchestrator because direct usage is concentrated among a small number of comms, HR, and admin users, while the value is realized across the full employee base.
-
-The $3 AI Companion package supports broad adoption and includes core campaign orchestration. The $6 Agentic AI Companion package creates a premium tier for higher-value, more complex, and higher-risk capabilities such as Agentic Liquid Content. Usage ceilings and consumption-based pricing protect margin when customers exceed expected usage, especially through repeated campaign regenerations, multi-audience variants, and heavy content creation.
-
-# Pricing Model
-
-## Current Pricing Structure
-
-| Package | Price | Above Threshold Pricing | Core Positioning |
-|---|---:|---|---|
-| AI Companion | $3 PUPM | PAYG / Consumption Based Pricing TBD | Includes Campaign Orchestrator **without** liquid content |
-| Agentic AI Companion | $6 PUPM | PAYG / Consumption Based Pricing TBD  | Includes Campaign Orchestrator **with** liquid content |
-
+**Model:** Hybrid tier-based seat pricing + consumption-based overage. Customers buy seats at the tier that matches the user's expected AI usage. Each seat includes a credit allocation. Usage above the allocation is PAYG at per-action rates.
 
 **Why this structure:**
-Workvivo AI pricing has two commercial motions, both taking a hybrid seat based pricing and consumption based pricing model.
-Seat-based pricing maps to how Workvivo is already sold and keeps the commercial model simple for customers. It works for Campaign Orchestrator because direct usage is concentrated among a small number of comms, HR, and admin users, while the value is realized across the full employee base.
 
-The $3 AI Companion package supports broad adoption and includes core campaign orchestration. The $6 Agentic AI Companion package creates a premium tier for higher-value, more complex, and higher-risk capabilities, such as Agentic Liquid Content. Usage ceilings and consumption-based pricing protect margin when customers exceed expected usage, especially through repeated campaign regenerations, multi-audience variants, and heavy content creation.
+*Tier pricing matches actual usage patterns.* A frontline worker who searches twice a week shouldn't pay the same as a comms manager who creates content daily. Microsoft Copilot's $30 flat rate over-charges the light-use majority and under-monetizes the AI-heavy power user. We do the opposite: under-price HQ for reach, fairly-price HQ+ for value.
 
+*Credit allocation gives customers predictability.* Buyers want a known monthly cost. Pure PAYG creates unpredictable bills and stalls procurement. Pure flat-rate over-charges light users. The hybrid model gives a predictable baseline and a transparent overage rate.
+
+*Consumption ceilings defend margin.* The pricing model only works if AI-heavy users pay for their consumption above the allocation. PAYG above the credit pool is the margin protection — without it, HQ+ seats run thin at $6.50.
+
+---
 
 ## Stress Tests
 
-
 | Scenario | Impact on Margin | Response |
 |---|---|---|
-| **Inference costs 3x** | Modeled AI COGS rises from **$1.0094 to ~$3.02 per contracted user/month**. For Core SaaS + AI Companion at **$7 PUPM**, gross margin falls from **~74.2% to ~45.4%**, assuming $0.80 non-AI COGS. | Tighten Zoom AI Companion 3.0 routing so more search, edits, summaries, and regenerations stay on lightweight or standard model paths. Reserve advanced model paths for long-form, executive-facing, multi-channel, or multi-audience campaign generation. |
-| **Active creator count expands 10x** | A 1,000-person customer moves from **2 to 20 active Comms Orchestrator creators**. Standard Comms Orchestrator COGS rises from **$9.40 to $94.00/month**, or from **$0.0094 to $0.094 per contracted user/month**. Total modeled AI COGS rises from **$1.0094 to $1.094 per contracted user/month**. Gross margin falls from **~74.2% to ~72.9%**. | Add creator permissions, usage dashboards, and fair-use thresholds. Keep core Comms Orchestrator in AI Companion, but route heavy creators, repeated regenerations, and Liquid Content workflows into Agentic AI Companion or consumption-based pricing. |
-| **Model provider raises prices 50%** | Modeled AI COGS rises from **$1.0094 to ~$1.51 per contracted user/month**. For Core SaaS + AI Companion at **$7 PUPM**, gross margin falls from **~74.2% to ~67.0%**, assuming $0.80 non-AI COGS. | Use Zoom AI Companion 3.0’s federated routing to shift routine tasks to lower-cost model paths. Monitor Enterprise AI Search separately from campaign generation, cache repeated retrievals where possible, and apply consumption pricing once usage ceilings are reached. |
+| **Inference costs 3x** | HQ AI-tier modelled COGS rises from ~$1.90 to ~$5.70 PUPM (against $3 AI revenue — negative margin). HQ+ COGS rises from ~$5.50 to ~$16.50 (against $6.50 — heavily negative). | Tighten Zoom AI Companion 3.0 routing aggressively. Push 25%+ traffic onto lightweight path. Cap frontier model use to genuinely complex tasks only. Renegotiate pricing on the Zoom side or restructure tiers. |
+| **Heavy HQ+ usage doubles** | HQ+ COGS rises from ~$5.50 to ~$11.00 against $6.50 revenue. AI tier margin goes deeply negative. | Tighten the HQ+ credit allocation. Move heavier workflows into HQ+ Enterprise / ZoomMate where the $20 price point can absorb the consumption. Communicate the change as tier refinement, not price increase. |
+| **Zoom raises prices 50% (already happened pre-launch)** | Pre-launch, this forced re-tiering — heavy compute features moved up to HQ+ and HQ+ Enterprise. Post-launch, the same response is harder because customers are on contract. | Use Zoom AI Companion 3.0's federated routing to shift more traffic to lower-cost paths. Apply consumption ceilings tighter. Move new heavy-compute features into HQ+ Enterprise / ZoomMate rather than including them in lower tiers. |
 
-
+---
 
 ## Board One-Pager
 
-### Before (traditional SaaS)
+### Before (traditional Workvivo SaaS)
+- **Current pricing (list):** $4.5 PUPM core platform
+- **Current gross margin:** ~82%
+- **Gross profit per user:** ~$3.70 PUPM
+- **Value framed as:** Internal communications, employee engagement, content delivery, recognition.
 
-- **Current pricing:** $4 PUPM
-- **Current gross margin:** ~80%
-- **Value framed as:** Internal communications reach, employee engagement, campaign publishing, and content delivery for comms teams.
-
----
-
-### After (AI-enabled)
-
-- **Proposed pricing:**  
-  - Core SaaS + AI Companion: **$7 PUPM**  
-    - $4 core platform + $3 AI Companion  
-  - Core SaaS + Agentic AI Companion: **$10 PUPM**  
-    - $4 core platform + $6 Agentic AI Companion  
-  - Consumption-based pricing applies after usage ceilings are reached.
-
-- **AI COGS per user/month:**  
-  - Enterprise AI Search: **$1.00 per contracted user/month**  
-    - Based on 20 searches per user/month at $0.05 per search.  
-  - Comms Orchestrator: **$0.0094 per contracted user/month**  
-    - Based on 2 active creators at $4.70 each, blended across 1,000 contracted users.  
-  - **Total modeled AI COGS for AI Companion:** **$1.0094 per contracted user/month**
-
-- **Expected gross margin:**  
-  - Core SaaS + AI Companion: **~74.2%** at planned usage  
-  - Core SaaS + Agentic AI Companion: **[NEEDS INPUT]** because incremental Agentic Liquid Content COGS is not yet defined.
-
-- **Value framed as:** AI-powered campaign orchestration, faster content creation, employee knowledge activation, reduced manual drafting and editing, and better comms productivity.
-
----
+### After (HQ AI-enabled, list pricing)
+- **Proposed pricing (combined with platform):**
+  - HQ: $7.5 PUPM ($4.5 platform + $3 AI tier) — *primary sales motion*
+  - HQ+: $11 PUPM ($4.5 platform + $6.5 AI tier) — *upsell motion*
+  - HQ+ Enterprise / ZoomMate: $24.5 PUPM ($4.5 platform + $20 AI tier) — *available on request, co-sold with Zoom*
+  - PAYG above included credits
+- **AI tier COGS (blended for 80/20 mid-market customer):** ~$2.62 PUPM at planned usage
+- **Total customer COGS (platform + AI):** ~$3.42 PUPM
+- **Expected gross margin (combined):** ~58% blended
+- **Expected gross margin (AI tier alone):** ~29% blended
+- **Value framed as:** AI-native HQ where every employee — frontline included — gets AI that helps them find, do, and understand. Workforce-wide AI, not desk-only.
 
 ### Net margin shift
 
-- **Margin moves from ~80% to ~74.2% for the Core SaaS + AI Companion package.**
-- Margin decreases because AI introduces variable COGS, primarily from Enterprise AI Search usage across the full contracted user base. Comms Orchestrator itself is not the main margin driver because only a small number of comms/admin users use it directly. At planned usage, Enterprise AI Search contributes **$1.00 PUPM** of modeled AI COGS, while blended Comms Orchestrator contributes only **$0.0094 PUPM**.
+Combined customer-level gross margin moves from ~82% (legacy SaaS) to ~58% (HQ AI-enabled at list). That's a 24-point margin shift driven by the variable AI consumption cost layered on top of the previously-margin-rich platform.
 
----
+But the right comparison isn't gross margin %. It's **gross profit per workforce** and **total revenue per customer.**
 
 ### Why this is still a good business
 
-Even though gross margin percentage declines, gross profit per user increases.
+| | Legacy Workvivo SaaS | HQ AI-enabled (80/20 customer at list) |
+|---|---:|---:|
+| Revenue PUPM (blended) | $4.5 | $8.20 combined ($4.5 platform + $3.70 AI tier) |
+| Gross profit PUPM (blended) | $3.70 | ~$4.78 combined |
+| **Gross profit uplift per user** | — | **+$1.08 PUPM (+29%)** |
+| **Customer expansion math** | Static — one price point | ~$14.7M AI tier ARR added at enterprise scale (~410K HQ users), on top of platform revenue |
 
-- Traditional SaaS gross profit: **$3.20 PUPM**  
-  - $4 revenue × 80% margin
+The bet isn't margin-per-user. It's **revenue-per-customer expansion**, **frontline reach** (which competitors structurally can't price for), and **moat density** (every-employee AI usage feeds Cross-Domain Transfer in the data flywheel).
 
-- Core SaaS + AI Companion gross profit: **$5.1906 PUPM**  
-  - $7 revenue - $0.80 non-AI COGS - $1.0094 AI COGS
-
-That means gross profit per user increases by approximately **$1.99 PUPM**. The business is attractive if AI Companion increases ARPU, improves retention, strengthens NRR, and creates a clear upgrade path into the **$10 Core SaaS + Agentic AI Companion** package.
-
----
+Plus: PAYG overages on AI-heavy HQ+ users improve effective margin meaningfully beyond the planned-usage baseline. The model is designed to capture more revenue from the customers driving the most AI consumption.
 
 ### Board-ready narrative
 
-The core SaaS platform is priced at **$4 PUPM** with an estimated gross margin of around **80%**. Adding AI Companion increases the customer price to **$7 PUPM** and introduces approximately **$1.0094 PUPM** in modeled AI COGS, bringing expected gross margin to around **74.2%**. While margin percentage declines, gross profit per user increases from **$3.20 to $5.19**, so the AI package improves monetization if it supports adoption, retention, and expansion. The main risk is uncontrolled AI usage, especially broad Enterprise AI Search growth, repeated campaign regeneration, or Agentic Liquid Content. We mitigate that through Zoom AI Companion 3.0 routing, usage ceilings, creator access controls, and consumption-based pricing once customers exceed planned usage.
+Workvivo HQ launches with two primary AI tiers — HQ at $3 AI add-on and HQ+ at $6.5 — layered on a $4.5 PUPM core platform, built around an 80/20 workforce split. HQ is priced for reach, HQ+ for value. PAYG overages defend margin against heavy AI consumption. HQ+ Enterprise (ZoomMate) is available for customers who want full agentic surface area, but it's not our primary motion — Workvivo's commercial focus stays on HQ and HQ+, where the EX-native value sits.
 
-**The bet works if...** AI Companion increases ARPU and retention enough to justify the margin shift, while Agentic AI Companion captures premium orchestration and liquid content use cases and usage ceilings protect margin from heavy consumption.
+At a mid-market customer scale (25K employees), blended combined margin is ~58% at list — materially lower than legacy 82% SaaS margins, but with materially higher revenue per customer (+82% blended PUPM). At enterprise scale (~410K HQ users), the AI tier alone adds ~$14.7M ARR on top of $22M+ in platform revenue — combined contract value approaches $37M at list.
+
+The structural advantage is workforce reach. Microsoft Copilot at $30 PUPM reaches only the desk worker — 20% of the workforce. Workvivo HQ at $3 AI list reaches the frontline 80% that Copilot structurally cannot. That math is the procurement-killer argument: same workforce, fraction of the spend, broader reach.
+
+**The bet works if...** the HQ tier drives every-employee adoption (proving the reach claim), HQ+ adoption follows from HQ exposure to AI features (proving the upsell motion), and PAYG overages plus tight Zoom AI Companion 3.0 routing hold blended AI tier margin at or above 29% at scale.
+
+---
+
+## Break-Even Math
+
+**Customer-level break-even (mid-market, 25K employees, 80/20, at list):**
+
+- Monthly AI tier revenue at planned usage: $92,500
+- Modelled AI tier COGS: $65,500
+- Monthly AI tier gross profit: $27,000
+- Annual AI tier gross profit per customer: $324,000
+
+**Portfolio break-even:**
+
+Assuming $5M/year of dedicated AI engineering, infrastructure, and HITL/QA costs (Workvivo-side, not Zoom consumption):
+
+- Annual fixed AI cost: $5M
+- Break-even customer count: $5M ÷ $324K = **~15 mid-market customers** at planned usage
+- At enterprise scale (~$14.7M AI ARR per customer): break-even on just **one enterprise customer**
+
+The model breaks even quickly because the AI revenue scales with workforce size, not seat count. Two or three enterprise customers at the ~410K-user scale carry the entire AI investment.
+
+The longer-run economics depend on PAYG overage capture and HQ+ adoption rate (customers who upgrade from HQ as their AI usage grows). HQ+ Enterprise / ZoomMate revenue, where it happens, is largely incremental — those deals come in alongside Zoom co-selling and aren't part of the core Workvivo upsell motion.

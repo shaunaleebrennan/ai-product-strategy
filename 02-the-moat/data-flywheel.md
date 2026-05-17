@@ -2,9 +2,12 @@
 
 ## Flywheel Loops
 
-### Loop 1: Usage → Correction loop: 
+### Loop 1: Usage → Correction
+
 **Score: 2/5**
+
 *How does usage generate proprietary data?*
+
 Every AI surface in HQ collects feedback. Liquid Content sees thumbs up/down and edits. Catch Me Up sees what gets dismissed. Ask HQ sees thumbs-down on bad answers. Seer sees which recommendations managers act on. All of it goes into the audit trail.
 
 But we don't use any of it to train the AI. That's a deliberate choice — Workvivo and Zoom have a published commitment that customer content is not used to train Zoom's or third-party AI models. It's the same commitment that gives us the trust story we sell on in enterprise deals.
@@ -19,9 +22,12 @@ What works today:
 
 Score 2/5 because the framework expects a fast learning loop. We have something different — slower, but defensible — and we haven't yet wired it as a deliberate flywheel.
 
+---
 
-### Loop 2: Signal → Preference loop
+### Loop 2: Signal → Preference
+
 **Score: 2/5**
+
 *How does that data improve the model?*
 
 Timing is learned. Voice is configured. Surface-to-surface signal exists in places — but it's partial and routes through humans, not the model.
@@ -34,10 +40,14 @@ What's missing: the automated version. When Seer detects a theme employees care 
 
 Score 2/5: configuration works, customer-level timing works, human-routed handoff partially works (Ask HQ → admin insights → manual fill), auto-handoff doesn't.
 
+---
 
 ### Loop 3: Model → Experience
+
 **Score: 4/5**
+
 *How does the better model improve UX?*
+
 This is the strongest loop and the real moat.
 
 Microsoft sees what employees do in Outlook. Unily sees what gets published. Workvivo sees how every employee feels, what they ask, what they engage with, and what they ignore — all on one platform. That's the asymmetry no point tool can match.
@@ -46,14 +56,21 @@ As each customer uses HQ more, their own content corpus grows, their engagement 
 
 Honest caveat: this loop is capped by Loops 1 and 2. If we don't wire the surfaces together properly, the experience improvement is real but plateaus early.
 
+---
+
 ### Loop 4: Experience → Usage
+
 **Score: 4/5**
+
 *How does better UX drive more usage?*
+
 HQ already has the daily habit other AI tools are still trying to earn. 9M employees reached. 90% adoption. 96% retention. Catch Me Up makes HQ the morning surface for every employee. Ask HQ becomes the default reflex for "where do I find...?" Liquid Content gets used more as predictions land — campaigns spread, frontline reach widens, more pillars get touched.
 
 This is structural. HQ Core touches every employee daily by design — which means signal feeds back faster, from more people, in more contexts. If we wired Loops 1 and 2 up properly, the whole flywheel would accelerate.
 
 Honest caveat: high usage without a coherent flywheel is just more data, not more learning. The habit is huge. The fact that it isn't yet feeding the platform intelligence faster is what keeps the total score below 15/20.
+
+---
 
 **Total Flywheel Score: 12/20**
 
@@ -70,73 +87,79 @@ None of this needs us to train AI on customer data. It's Workvivo surfaces talki
 Same gap shows up in M4 and M5. One problem, three modules, one fix.
 
 ---
-
 ## Competitive Positioning
 
-**Axis X:** AI surface depth — single AI feature (left) ←→ AI platform with cross-pillar signal (right)
+**X-axis: What the AI sees** — limited EX measurement (left) → full EX signal: sentiment + engagement + recognition (right)
+**Y-axis: Workforce coverage** — desk-only (bottom) → everyone, frontline + desk (top)
 
-**Axis Y:** Workforce coverage — desk-only (bottom) ←→ every employee, frontline + desk (top)
+|                                       | **← Limited EX measurement**            | **Full EX signal →**                              |
+| ------------------------------------- | --------------------------------------- | ------------------------------------------------- |
+| **↑ Everyone**<br>**(frontline + desk)** | Unily                                   | **★ Workvivo HQ**                                 |
+| **↓ Desk-only**                       | Glean                                   | Microsoft (Viva + Cowork)                         |
 
-| Quadrant | Who lives there | Why |
-|---|---|---|
-| **Top-right: Platform AI for everyone** | **Workvivo HQ** | Cross-pillar signal + 80% workforce reach + daily-active habit |
-| **Top-left: Single-pillar AI for everyone** | Staffbase, Simpplr, early Unily Glass | EX-built but smaller AI surface and shallower workforce signal |
-| **Bottom-right: Platform AI for desk-only** | Microsoft Copilot Cowork, Salesforce + Agentforce, ServiceNow Now Assist | Big platform but desk-only; EX is bolted on, not built in |
-| **Bottom-left: Single-pillar AI for individuals** | Canva AI, ChatGPT/Claude (personal), Gamma | Strong creation, no measurement, no platform signal, no enterprise reach |
+**Reading the chart:**
 
-| Competitor | Vector | Time-to-threat | % of value at risk |
-|---|---|---|---|
-| **Workvivo HQ** | Defending top-right quadrant. Cross-pillar signal + frontline reach + governance. | N/A | — |
-| **Microsoft Copilot Cowork** | Already shipped in Frontier preview, built on Claude, agentic across M365, extensible via skills + plugins. Microsoft has 78 things named Copilot; EX gaps get filled by partners via the M365 App Store. | 6–12 months to GA; 12 months for EX skill pack | 50–60% — drafting, scheduling, basic search are replicable. Sentiment, frontline reach, governance posture are not. |
-| **Unily Glass** | Purpose-built for internal comms. Going deeper on content intelligence, personalisation, and search. Pitch: we do what HQ does, but as our whole product. | Less than 6 months — already in market | 30% — comms-native and credible. Can't see what Seer sees, can't reach frontline at our depth. |
-| **Canva** | Owns the creation workflow. 200M+ users, AI shipping fast. Adding an "internal comms publishing" layer is within reach. Bottom-up distribution via the comms manager's personal tool. | 18–24 months to enterprise scale | 25–30% — owns the creation moment, can't close the measurement loop. |
+- **Top-right — Workvivo HQ.** The only platform with full EX signal *and* every-employee reach. Seer's always-on sentiment, engagement, recognition, comments, frontline mobile — all in one place, used by 90% of contracted users daily.
+- **Top-left — Unily.** EX-built and reaches the workforce, but lighter on EX measurement. Engagement data and some sentiment in Glass/Indy/Liquid Content, but no equivalent of Seer's always-on listening engine.
+- **Bottom-right — Microsoft (Viva + Cowork).** Microsoft does have EX measurement capability — Viva Glint for surveys, Viva Insights for engagement analytics, Viva Pulse for quick check-ins. The structural problem is reach: it all lives in the M365 stack, which means it never reaches the 80% of the workforce without an M365 Copilot license.
+- **Bottom-left — Glean.** Enterprise AI search and assistant. Indexes work product (documents, messages, tickets, meetings) — no sentiment, no engagement layer. Sold to IT for desk workers across the connected enterprise stack.
 
----
+**Why HQ is alone in the top-right:**
+
+EX signal at depth and frontline reach are *correlated investments*. You don't end up with both unless you built deliberately for both. Microsoft has the data but didn't invest in reaching everyone. Unily and Staffbase reach everyone but didn't invest in sentiment at Seer's depth. Glean has neither.
+
+**Sales line:** *"Microsoft sees what your people do. We see how they feel — and we reach all of them."*
 
 ## 90-Day Encroachment Plan
 
 *Three threat vectors. Name the attacker. Estimate the timeline. Quantify the damage. Plan the defence.*
 
-### 1. Platform Encroachment — Microsoft 365 Copilot Cowork
+### 1. Platform Encroachment — Microsoft (Viva + Cowork)
 
-**Attack vector:** Cowork is already shipping in Frontier preview. Built on Claude (same AI we use via Zoom). It runs multi-step tasks across M365 — email, calendar, docs, Teams. It's extensible via skills and plugins, so Microsoft doesn't need to build EX features themselves — partners will via the M365 App Store. Once Cowork goes GA and gets bundled into M365 E5, the pitch to IT is: "you already pay for this. Why pay extra for Workvivo?"
+**Attack vector:** Microsoft already has all the pieces. Cowork just shipped in Frontier preview — agentic AI across M365, built on Claude, extensible via skills and plugins. Viva already covers sentiment (Glint), engagement (Insights), and comms (Amplify, Engage). The risk isn't them building something new — it's them integrating what they already own and bundling it into M365 E5. Once Cowork goes GA, the pitch to enterprise IT is: "you already pay for this. Why pay extra for Workvivo?"
 
-**Time-to-threat:** 6–12 months to GA. Another 6 months for a credible EX skill pack.
+**Time-to-threat:** 6–12 months to Cowork GA. Another 6–12 months for a coherent Viva + Cowork integration with EX skills built by partners via the M365 App Store.
 
-**% of value at risk:** 50–60%. Drafting, scheduling, and basic search are replicable. Sentiment, frontline reach, and our governance posture are not.
+**% of value at risk:** 50–60%. Drafting, scheduling, basic search, and surface-level sentiment are replicable. Cross-pillar signal density, frontline reach, and our governance posture are not.
 
 **Your defence:**
 
-*Microsoft sees what people do. We see how they feel.* That sentiment signal is what makes HQ smarter and what Cowork has no equivalent of.
+*Microsoft sees what people do. We see how they feel — and reach the people doing the work.* Microsoft has sentiment in Viva Glint and engagement in Viva Insights, but they live separately from Cowork. The AI coworker runs on the Microsoft Graph (email, calendar, docs), not on EX signal. HQ runs on both, in one place, woven together.
 
-*Microsoft reaches the desk. We reach everyone.* Cowork needs an M365 license. HQ reaches the 80% of the workforce that doesn't have one.
+*Microsoft reaches the desk. We reach everyone.* Cowork needs an M365 Copilot license. HQ reaches the 80% of the workforce that doesn't have one — and Viva's sentiment data, even where it exists, doesn't reach them either.
 
-*Microsoft wins procurement. We win product.* IT defaults to Microsoft because the contract is signed. We win when EX has its own buying centre — 3-4x higher adoption than Viva proves the product gap is real.
-
----
-
-### 2. Vertical Competitor — Unily Glass
-
-**Attack vector:** Unily Glass is purpose-built for internal comms. Going deep on content intelligence, personalisation, search. Their pitch: "we do what Workvivo's AI does, but as our whole product, not one feature."
-
-**Time-to-threat:** Less than 6 months — already in market.
-
-**% of value at risk:** 30%. Comms workflows are contested. Frontline reach, the Zoom partnership, Seer, and platform-wide signal are not.
-
-**Your defence:** Unily is a comms tool trying to become a platform. Workvivo is a platform where comms is one of five surfaces. HQ's AI gets smarter from how people search, engage, surface knowledge gaps, shift sentiment — not just from how comms managers work. Unily's AI is trained on content creation. Workvivo's is trained on the whole employee experience. That's compounding they can't catch without rebuilding from scratch.
-
-Sales line: "Unily is comms with AI. Workvivo is the AI-native HQ where comms is one surface among five, all feeding each other."
+*Microsoft wins procurement. We win product.* IT defaults to Microsoft because the contract is signed. We win when EX has its own buying centre — 3-4x higher adoption than Viva proves the product gap is real. Push EX into its own procurement track wherever possible.
 
 ---
 
-### 3. Adjacent Expansion — Canva
+### 2. Vertical Competitor — Unily
 
-**Attack vector:** Canva owns the creation workflow — brand kits, templates, 200M+ users, AI shipping fast. Adding an "internal comms publishing" layer with AI copy is within reach. Distribution is bottom-up via the comms manager's personal tool.
+**Attack vector:** Unily is the EX-native vertical competitor. Their AI suite — Glass, Indy, and Liquid Content — is purpose-built for enterprise internal comms and intranet experience. They're going deep on content intelligence, personalisation, knowledge search, and multi-format generation (their own feature also called "Liquid Content"). Their pitch: "we do what Workvivo's AI does for comms, but as our whole product, not one feature among many."
 
-**Time-to-threat:** 18–24 months to be enterprise-credible.
+**Time-to-threat:** Less than 6 months. Glass is already in market; Indy and Liquid Content are maturing fast.
 
-**% of value at risk:** 25–30%. They own the creation moment. They can't close the measurement loop.
+**% of value at risk:** 30%. Comms workflows are contested. Frontline reach, the Zoom partnership, Seer-grade sentiment, and platform-wide signal are not.
 
-**Your defence:** Canva can help you make beautiful content. It has no idea if anyone read it. Workvivo closes the loop — create, publish, measure, improve — in one system. The moment a comms manager asks "did that land?", Canva has no answer.
+**Your defence:** Unily is a comms tool trying to become a platform. Workvivo is a platform where comms is one of five surfaces. HQ's AI gets smarter from how people search, engage, surface knowledge gaps, shift sentiment — not just from how comms managers work. Unily's AI is trained on content creation workflows. Workvivo's is trained on the whole employee experience. That's compounding they can't catch without rebuilding from scratch.
 
-Tactically: embed with comms and HR buyers before Canva's bottom-up adoption reaches IT. Make Workvivo the system of record for comms performance before Canva becomes the system of record for comms creation. Then Canva stays the place creation happens; Workvivo is the platform that connects everything.
+Sales line: *"Unily is comms with AI. Workvivo is the AI-native HQ where comms is one surface among five, all feeding each other."*
+
+---
+
+### 3. Adjacent Expansion — Glean
+
+**Attack vector:** Glean is enterprise AI search that has already moved into the assistant and agent layers. They're sold to IT, deployed across the same connected systems HQ+ would integrate with (M365, Slack, Salesforce, Workday), and they've publicly positioned around Glean Apps and Glean Agents — building toward an agentic platform for enterprise. Their pitch to a buyer who already has them: "we already do enterprise AI assistant and search — why pay extra for Workvivo's version?"
+
+**Time-to-threat:** Less than 6 months for the Ask HQ overlap (they're already in market). 12–18 months for a credible EX extension that touches comms, recognition, or journeys.
+
+**% of value at risk:** 35–40%. They directly compete with Ask HQ and Enterprise AI Search today, and could extend into adjacent EX surfaces over the next year. Engagement signal, frontline reach, Seer-grade sentiment, and the comms creation surface stay safer.
+
+**Your defence:**
+
+*Glean sees what people do. We see how they feel.* Glean indexes documents, messages, tickets, and meetings — the work product. Workvivo sees employee sentiment, recognition patterns, engagement signal, and what content actually lands. That's the difference between a productivity assistant and an experience platform.
+
+*Glean is for the desk. HQ is for everyone.* Glean lives where the connected enterprise systems live — and most of those systems don't reach the 80% of the workforce that doesn't sit at a desk. HQ reaches them on day one.
+
+*Glean answers questions. HQ closes loops.* When Ask HQ surfaces a content gap, the platform also has the comms surface to fill it (Liquid Content), the engagement layer to measure it (Insights), and the sentiment signal to know if it landed (Seer). Glean is one surface. HQ is the experience layer where all of them meet.
+
+Tactically: position HQ as the EX platform that *includes* enterprise search, rather than letting Glean position HQ as a comms tool that includes a worse Glean. Anchor the conversation on the four pillars (Navigator, Communicator, Coach, Operator), not on any single feature comparison.

@@ -53,19 +53,3 @@ The real risk is the inverse. If HQ becomes the most valuable AI launch in Zoom'
 - **The product expertise.** EX product design isn't productivity product design. The team that built Workvivo knows things Zoom Workplace teams don't — and that knowledge sits in the people, not the codebase.
 
 **The honest answer:** Our kill switch isn't model portability. It's organisational positioning inside Zoom. We protect the bet by making HQ the clearly-defined, distinctly-valuable EX brand inside the Zoom portfolio — not by trying to be model-portable in a way the federated architecture makes impossible.
-
-## Portability Actions
-
-**This week:**
-- Document every Zoom AI Companion endpoint HQ depends on, by surface (Liquid Content, Catch Me Up, Ask HQ, Seer, Compose).
-- Get a clear answer from Zoom AI engineering: what can Workvivo configure or override at the routing level, and what is owned end-to-end by Zoom?
-
-**This month:**
-- Define the 5 product-level eval criteria for HQ AI outputs. Run a manual scorecard against current production for baseline.
-- Map the consumption cost of each AI surface. Identify the top 3 cost drivers and document the trim plan we've used (and would use again).
-- Formalise the tier-trimming response playbook from the recent pricing event. Turn one-time crisis response into a documented <72-hour response process for next time.
-
-**This quarter:**
-- Build product-level routing where we can — even partial control over which Zoom path each request takes is better than zero control.
-- Get a written commitment from Zoom on the roadmap for product-level routing controls inside Zoom AI Companion.
-- Pressure-test the "if HQ gets too successful" scenario internally. Define what brand independence inside Zoom looks like for FY28 and beyond.

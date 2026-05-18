@@ -44,7 +44,7 @@ On June 14, every AI feature ships at once across three pillars:
 1. **Communication & Engagement** — AI that drafts, measures, predicts, and explains. So messages land — even at the frontline.
 2. **Search & Knowledge** — plain-language search across every connected system (Microsoft 365, ServiceNow, Workday, Google). One question. One answer. Instantly.
 3. **People Intelligence (Seer)** — always-on listening. Sentiment, theme detection, flight-risk prediction. Transformation becomes measurable — leaders see what's working, where friction is emerging, and where to act.
-**Why now:** The world has decided AI is the future of work. But the experience is broken. Companies are layering tool on tool and watching adoption collapse. Microsoft is consolidating Viva — Goals and Topics already retired. Glint customers are evaluating alternatives. Copilot Cowork goes generally available in 6 to 12 months. The category claim — *every employee deserves an AI headquarters* — is up for grabs right now. After June, it's not.
+**Why now:** The world has decided AI is the future of work. But the experience is broken. Companies are layering tool on tool and watching adoption collapse. The category claim — *every employee deserves an AI headquarters* — is up for grabs right now. After June, it's not.
  
 **HQ also unlocks the commercial wedge our team has been asking for.** HR, Comms, and IT have always been three separate sales motions. HQ unites them around one mission: making AI transformation work. That accelerates buying committees and shortens deal cycles — without changing the product we sell.
  

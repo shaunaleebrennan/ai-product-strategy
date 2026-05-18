@@ -189,3 +189,146 @@ Six weeks ago my AI strategy was a single feature — Liquid Content. Today it's
 > AI doesn't need another tool. It needs somewhere work already happens.
 >
 > **Microsoft has 78 things named Copilot. We have one HQ.**
+
+
+
+
+You are an experienced AI product strategist and board advisor. Evaluate the following AI product strategy using the evaluation dimensions specified below.
+
+Be direct, specific, and constructively critical. For each dimension:
+- Score 1-5 (1 = critical gap, 5 = strong)
+- State what's working
+- State what's weak or missing
+- Give one specific recommendation
+
+At the end, provide:
+- An overall strategy strength score (1-5)
+- The single biggest risk
+- The three most important actions to take next
+
+---
+
+## STRATEGY INPUTS
+
+### THE BET (What we're building)
+**What we're building, for whom, why now.**
+
+- **Product:**
+- **AI Value Archetype:** Primary: Copilot — HQ is positioned as the daily AI companion for every employee, which makes Copilot the dominant archetype. This is also the head-to-head with Microsoft Cowork — our defence isn't a different archetype, it's better reach (frontline + desk) and stronger signal (Seer + cross-pillar data).
+- **Vulnerability Scores:** Moat 4/5 · Data 4/5 · Platform 3/5
+- **Top Risk:** *One line: what's the single biggest strategic risk?*
+- **Confidence:** H
+- **Prototype:** https://workvivo-hq.replit.app/
+- **Kill Criteria:** in each kill case, we prioritise a move to deeper LMM extensibility - so Workvivo remains the epxerience layer; while deprioritsing spend on AI features that aren't landing well enought ot warrant the spend: - Microsoft extends Copilot Cowork with a credible EX skill pack (recogn…
+
+### THE MOAT (Defensibility)
+**Why this won't get copied in 6 months.**
+
+- **Data Flywheel Score:**
+- **Weakest Loop:** Loop 1 — Usage → Correction
+- **Top Encroachment Threat:**
+- **Encroachment Defense:** Build on what's already working. Ask HQ already surfaces content gaps to admins — that's a working surface-to-surface signal flow, just one that routes through a person.…
+- **Vendor Portability:** Partial.
+
+### THE MARGIN (Economics & Pricing)
+**Will this make money or bleed it?**
+
+- **Gross Margin (current):**
+- **Gross Margin (AI-adjusted):**
+- **Pricing Model:** Hybrid tier-based seat pricing + consumption-based overage. Customers buy seats at the tier that matches the user's expected AI usage. Each seat includes a credit allocation. Usage above the allocation is PAYG at per-action rates.
+- **Pricing Today → Tomorrow:**
+- **Total AI COGS / unit:**
+- **Cascading Strategy:** ratio 20% lightweight / 65% standard / 15% advanced.
+- **Net Margin Shift:**
+- **Break-even at:**
+
+### THE CONTRACT (Trust & Reliability)
+**Why users will trust a probabilistic system.**
+
+- **Reliability Target:** 90% on the golden dataset, checked weekly. Zero tolerance for fabrication on policy, personnel, legal, or financial content.
+- **Golden Dataset:** 7 rows, 3 adversarial
+- **Confidence UX:** Legibility before precision. Workvivo HQ shows confidence as a composite signal across every AI surface — Ask HQ, Catch Me Up, Seer, Compose, Liquid Content — surfaces the data driving each prediction, and routes sensiti…
+- **HITL Architecture:** **When a human steps in:** Three triggers, applied across all HQ AI surfaces. The model's confidence falls below 70%. The content or action is sensitive — DEI, leadership transitions, layoffs, M&A, legal, safety, executive messages, anythin…
+- **Failure Mode Coverage:** Engagement prediction calibration (does "90% predicted" actually mean 90% in production?); multilingual tone validation for regional variants of sensitive content; historical data poisoning (model learning the wrong pattern from low-quality…
+
+### THE GUARDRAILS (Governance & Scale)
+**What breaks when this scales — and what compounds.**
+
+- **Compounding System:** | Loop | Input | Output | Compounds? | Status | |------|-------|--------|-----------|--------| | **Recursive Learning** | User feedback (thumbs up/down, free text) across every AI surface — AI Content Assistant, AI Recap…
+- **Governance Posture:** All AI features inside Workvivo HQ across the three pillars — Communication & Engagement (AI Content Assistant, AI Recap), Search & Knowledge (AI Answers, Q&A, AI Recap), People Intelligence (Seer, Sentiment Analysis, Ma…
+- **Autonomy Boundaries:** - **Drafting and retrieval — auto.** HQ AI can draft content, retrieve from the knowledge layer, summarise, and predict whatever a user asks for, without approval. Reading and drafting are read-only.…
+- **Escalation Triggers:** - Confidence drops below 70%
+- **Audit Cadence:** - **Weekly:** Automated eval against the 7-row golden dataset. CI/CD gated. Owner: HQ AI PM.
+- **Shadow AI Audit (user-side):** 13 workarounds found · 3 keep, 7 govern, 3 kill (with Gamma and HeyGen-class tools split between kill at personal tier / govern at corporate tier). Net: roughly 10 sanctioned categories under clear governance, down from a long tail of personal subscriptions. build candidates · adjacent spend $10K–$18K per month across personal subscriptions and unsanctioned team accounts. This is also the budget for the governed alternative once we consolidate — and it's the number that gets the CFO's attention faster than the risk argument does.
+- **Agent Boundaries:** Workvivo HQ AI isn't a chain of named agents. It's three product pillars, each with its own AI capabilities and autonomy boundaries, sitting on a shared AI Engine foundation (Zoom AI Companion).…
+- **Regulatory Exposure:** - **Data residency:** Customer data is processed in the customer's chosen region — US or EU. EU customers' AI features are powered by Zoom-hosted models plus Anthropic models via Amazon Bedrock on AWS.…
+
+---
+
+## EVALUATION DIMENSIONS
+
+Evaluate this strategy against the following dimensions:
+
+### Bet Validation
+- Is the bet backed by user evidence (interviews, usage data, market signals) or primarily by conviction/intuition?
+- What falsifiable hypothesis underlies this bet? What would prove it wrong?
+- How quickly can you validate the core assumption — days, weeks, or months?
+- What is the kill criteria? At what point do you walk away?
+
+### Capability Assessment
+- What technical capabilities need to be developed vs. what exists today?
+- What organizational capabilities (data pipelines, ML ops, domain expertise) are required?
+- Is the capability gap realistic to close in the planned timeframe?
+- What dependencies (third-party models, data sources, regulatory approvals) could block progress?
+
+### Impact Analysis
+- What specific business metric does this bet move (revenue, cost reduction, retention, expansion)?
+- What is the magnitude of impact — incremental improvement or step-change?
+- How does impact compound over time, or does it plateau?
+- What is the opportunity cost of pursuing this bet vs. alternatives?
+
+### Defensibility Check
+- Could a platform (Google, Microsoft, Apple, OpenAI) ship this as a native feature within 12 months?
+- What data flywheel exists that gets stronger with usage?
+- What switching costs exist for users who adopt this?
+- Is there workflow depth (deeply embedded in user processes) or is this a surface-level feature?
+
+### Pricing Alignment
+- Does the pricing model align with how value is delivered (per seat, per task, per outcome)?
+- What happens to unit economics when a power user does 10x the average volume?
+- Can the product sustain its current pricing if inference costs increase 2-3x?
+- Is there a clear willingness-to-pay signal from the target buyer?
+
+### Trust & Reliability
+- Is there a golden dataset that defines "good" output for this specific product?
+- What does the user see when the AI is uncertain — is confidence visible or hidden?
+- Is there a human-in-the-loop path for high-stakes or low-confidence outputs?
+- What is the explicit reliability promise to users — accuracy %, latency, uptime?
+
+### Governance & Scale
+- What breaks when this scales 10x — cost, quality, latency, or trust?
+- Is there a governance framework for model changes, data handling, and compliance?
+- How are corrections and feedback captured and fed back into improvement?
+- Has a user-side shadow AI audit been run — what are users / clients building with AI around the product, and which signals are loud enough to act on?
+
+### Gap Identification
+- Which of the five strategy components (Bet, Moat, Margin, Contract, Guardrails) is weakest or missing?
+- What assumptions are untested?
+- What question would a skeptical board member or CPO ask that you cannot answer today?
+- What is the single biggest risk that could kill this bet in the next 6 months?
+
+---
+
+## FORMAT
+
+For each dimension, respond with:
+
+**[Dimension Name]** — Score: X/5
+- Strengths: ...
+- Gaps: ...
+- Recommendation: ...
+
+Then close with:
+- **Overall Score:** X/5
+- **Biggest Risk:** ...
+- **Top 3 Actions:** ...

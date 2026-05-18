@@ -99,7 +99,7 @@
 
 **How you get this funded, shipped, and adopted.**
 
-- **Horizon 1 (Now · 0–4 weeks):** Search & Knowledge pillar AI (Agentic Search across major enterprise systems — M365, ServiceNow, Workday, Google) · Communication & Engagement pillar AI (Catch Me Up, AI Compose across surfaces, Smart Chapters, Journey Builder, Page Builder) · People Intelligence pillar AI (Seer Summaries, Recommended Actions, Topic Grouping) · Seer Standalone (Glint alternative — new commercial motion sells without a full Workvivo platform contract) · Level 3 governance posture live · $2/$6/$20 AI tier pricing active.
+- **Horizon 1 (Now · 0–4 weeks):** Search & Knowledge pillar (Agentic Search across major enterprise systems — M365, ServiceNow, Workday, Google) · Communication & Engagement pillar (Catch Me Up, AI Compose across surfaces, Smart Chapters, Journey Builder, Page Builder) · People Intelligence pillar (Seer Summaries, Recommended Actions, Topic Grouping) · Seer Standalone (Glint alternative — new commercial motion sells without a full Workvivo platform contract) · Level 3 governance posture live · $2/$6/$20 AI tier pricing active.
 
 - **Horizon 2 (Next · 1–3 months):** Connector ecosystem expansion (toward 1000+, prioritised by deal-blocking gaps) · Seer recommends actions automatically with HITL approval · Smart routing v1 (cascade routing protects AI margin at scale) · Network Intelligence pilot (10 opt-in design partners, privacy-gated cross-customer learning) · ZoomMate usage-based add-on ($20 + overages, request-only).
 

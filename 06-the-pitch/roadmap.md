@@ -1,3 +1,130 @@
+# 06 — The Pitch
+ 
+**Workvivo HQ · Board Pitch + Three-Horizon Roadmap**
+**Author:** Shauna Azevedo-Brennan, Lead PMM (Interim Head of Product Marketing)
+**Audience:** John Goulding, CEO Workvivo
+**Launch:** June 14, 2026
+ 
+---
+ 
+## Audience
+ 
+John Goulding, CEO Workvivo. He cares most about Workvivo keeping its own identity and category leadership inside Zoom — he didn't sell the company to become a feature of Zoom. He's skeptical of AI for the sake of AI, of margin compression that doesn't return clear customer value, and of strategies that lean too heavily on Zoom's distribution as the reason we win.
+ 
+---
+ 
+## Opener
+ 
+> We are entering a new AI era. Every organization is under pressure to transform how people work, how work gets done, and how change lands across the business — so they can justify the ROI of their AI investment.
+>
+> That pressure is landing directly on our buyers. HR has to improve employee experience and help people adapt to new ways of working. Comms has to cut through more noise than ever and keep employees connected. IT has to enable AI safely, reduce tool sprawl, and create a governed, connected technology experience.
+>
+> But while the pressure is urgent, the path is unclear. There is no universal playbook for driving adoption, managing change, reducing risk, and proving impact at scale.
+>
+> Most vendors are shipping AI features. We're shipping the experience layer where AI lands successfully — because employee experience is at the core of everything we do.
+>
+> John, you said it best: *"The next generation of AI at work won't be won by the smartest model. It will be won by what people actually use, every day."*
+>
+> **Workvivo HQ is the experience layer for work, AI, and people. For everyone. At $6.**
+ 
+---
+ 
+## The Case (why we should invest)
+ 
+> **AI does not succeed because it exists. It succeeds when people use it, trust it, and experience it in the flow of work.**
+ 
+That is the Workvivo advantage.
+ 
+Workvivo already sits where 9 million employees communicate, connect, find information, and experience culture every day. 90% adoption. 96% retention. HQ builds on that foundation — giving organizations one trusted place where AI, people, knowledge, and action come together.
+ 
+This is the evolution John has been pointing to for two years: **from "digital heart" to mission-critical.** Digital heart helped us own culture, connection, and engagement. HQ takes that strength and turns it into the answer to the AI question every CEO is now being asked.
+ 
+On June 14, every AI feature ships at once across three pillars:
+ 
+1. **Communication & Engagement** — AI that drafts, measures, predicts, and explains. So messages land — even at the frontline.
+2. **Search & Knowledge** — plain-language search across every connected system (Microsoft 365, ServiceNow, Workday, Google). One question. One answer. Instantly.
+3. **People Intelligence (Seer)** — always-on listening. Sentiment, theme detection, flight-risk prediction. Transformation becomes measurable — leaders see what's working, where friction is emerging, and where to act.
+**Why now:** The world has decided AI is the future of work. But the experience is broken. Companies are layering tool on tool and watching adoption collapse. Microsoft is consolidating Viva — Goals and Topics already retired. Glint customers are evaluating alternatives. Copilot Cowork goes generally available in 6 to 12 months. The category claim — *every employee deserves an AI headquarters* — is up for grabs right now. After June, it's not.
+ 
+**HQ also unlocks the commercial wedge our team has been asking for.** HR, Comms, and IT have always been three separate sales motions. HQ unites them around one mission: making AI transformation work. That accelerates buying committees and shortens deal cycles — without changing the product we sell.
+ 
+---
+ 
+## The Moat (real today + compounding over H2-H3)
+ 
+I want to be honest about what ships when, because the moat story is stronger when it doesn't overclaim.
+ 
+**Real on day one (June 14):**
+ 
+- **Attention.** 9 million employees opening Workvivo by habit. Microsoft can buy more features. They cannot buy our habit.
+- **AI built in, not bolted on.** Zoom AI Companion is our unfair advantage — $1B R&D, deep model partnerships, federated routing. We don't compete on the model layer; we compose it.
+- **Frontline reach.** 80% of the workforce Copilot doesn't license — already on our platform, mobile-first, no email required.
+- **Level 3 governance.** Zero data retention with model providers. No training on customer content. EU residency via AWS Bedrock. Most enterprise AI cannot claim all three.
+**Compounding over H2–H3 (months 1–6 post-launch):**
+ 
+- **Cross-pillar signal sharing.** Comms triggers Search triggers Seer — the AI learning what no point tool can see. This is real architecturally in H1 but compounds visibly over H2 as the loops mature.
+- **Learning loop closure (Loop 1).** We capture corrections today but don't compound them at the platform layer yet. The H3 fix is the structural answer — and the bet I'd protect if every other one had to go.
+- **Connector ecosystem at scale.** Major enterprise systems live at launch; ecosystem expands toward 1000+ in H2, prioritised by deal-blocking gaps.
+The honest read: **four moats are real on day one. Three more compound to full strength over the 6 months that follow.** That's a stronger pitch than claiming structural defensibility we haven't earned yet — and it tells the board exactly what to look for at month 3 and month 6 to know it's working.
+ 
+---
+ 
+## The Model (does the math hold)
+ 
+- **Pricing today → tomorrow:** $4 platform today → $4 + $2 HQ AI = **$6 per user per month** at June 14. HQ+ at $10. HQ+ Enterprise (the full agentic version, request only) at $24.
+- **Gross margin (current platform):** ~82%.
+- **Gross margin (AI-adjusted):** ~50% blended at $6 list. **AI tier alone runs at ~6% margin at the $2 entry price** — deliberately thin to drive adoption, not a permanent margin position.
+- **Total AI COGS:** ~$1.88 per HQ AI seat per month at the planned 20% lightweight / 65% standard / 15% advanced cascade ratio.
+- **Net margin shift:** -32 points combined (82% → 50%). But ARPU expands ~50%, and Seer Standalone unlocks a parallel motion that doesn't require a full platform deal.
+- **Break-even:** AI tier breaks even with cascade routing v1 working at planned ratio. Blended margin trends from 50% toward 60%+ over 18–24 months as smart routing matures and AI tier ARR scales.
+- **At enterprise scale (~410K HQ users):** A single contract approaches $30M annual, with $9.8M as AI revenue.
+- **Versus the competition on AI alone:** **15x cheaper than Copilot. 22x cheaper than Glean.** Same job — for the entire workforce, not just the desk holder.
+**The 10x power-user stress test:** A heavy AI user generating 10x average volume on the $2 tier breaks AI margin negative. Mitigation is built into smart routing v1 (most queries served by the cheaper model) and a fair-use cap on the entry tier. Customers who hit the cap convert to HQ+ ($10) or take a usage-based add-on.
+ 
+**Inference cost stress test:** If inference prices rise 2x, AI tier margin drops to roughly break-even. If they rise 3x, we lift HQ AI from $2 to $3 — still 10x cheaper than Copilot, with room to absorb. The price doesn't break the value story.
+ 
+---
+ 
+## The Risks (what could go wrong — honest version)
+ 
+- **Our learning loop is broken.** We capture every correction users make — but the system doesn't compound from those corrections yet. The fix is on the H3 roadmap. This is the structural risk: shipping a system that doesn't get measurably smarter from usage.
+- **The evidence is still ahead of us.** We have 9M users of the Workvivo platform — but zero users of HQ AI. Our pricing model, conversion rate from $4 platform to $6 combined, and willingness-to-pay at the $2 tier are conviction-led, not evidence-led. **5-10 customer design-partner pilots over the next 30 days closes that gap before launch.**
+- **The reliability dataset is too small to validate the 90% accuracy claim.** Today it's 7 rows with 3 adversarial. We're scaling to 100+ before launch and 200+ within 90 days. Until then, the accuracy claim is directional, not statistical — and the board should know that.
+- **Microsoft extends Copilot into employee experience inside 12 months** — likely via partner-built skills in the M365 App Store, not Microsoft shipping it directly. We respond by shipping the category-defining experience now, while they're still racing on features.
+- **Zoom absorbs HQ as a Zoom feature** if it becomes the most valuable launch in the portfolio. Seer Standalone protects us — it gives Workvivo a sales motion that doesn't depend on Zoom bundling.
+- **The AI tier is near break-even at $2.** We're exposed if AI costs go up. The fix: route most queries to a cheaper, smaller AI model and only use the expensive one for complex work.
+- **Trust.** Air Canada precedent matters: when a company's AI chatbot promised a fake refund policy, the airline had to honor it. Every AI commitment is a company commitment. That's why our most powerful AI features always require a human to approve before anything is saved or sent.
+- **The discipline underneath the promise.** Every week we measure six things across every AI surface — how often the AI gets something wrong, whether it stays accurate over time, whether it's confident when it should be, how often a human has to step in, how much revenue we earn per dollar of AI spend, and whether each model update makes the system better or breaks it. If any one of those moves the wrong way, we see it before customers do. That's how we back the experience-layer promise with discipline, not vibes.
+---
+ 
+## The Ask
+ 
+**Deprioritise Liquid Content as a bundled feature. Move it to premium-only.**
+ 
+This is the single biggest learning from the work. Liquid Content — the multi-format AI content engine — was always going to be the headline feature. But the unit economics don't work at $2 per user per month.
+ 
+Every Liquid Content generation carries real cost: image, video, audio, podcast formatting. At the $2 HQ AI tier, three or four uses per user per month wipes the margin. If we bundle it into the base tier, we're either subsidising power users at the expense of the rest, or capping usage in a way that makes the feature feel broken.
+ 
+**What I'm asking for:**
+ 
+1. **Liquid Content does not ship in the $2 HQ AI bundle.** Period.
+2. **Liquid Content moves to HQ+ Enterprise as a premium upsell only** — where the $24 per user pricing can absorb the inference cost, and where customers who need multi-format generation at scale pay for what they consume.
+3. **Optionally, offer Liquid Content as a usage-based add-on** to HQ+ customers — so we capture mid-market demand without putting pressure on margin.
+4. **Rebuild Liquid Content v2 in H3** with the right commercial frame from day one: premium tier feature, usage-based pricing, scoped to the 2-3 content formats that actually move engagement.
+**What I'm also committing to, alongside the ask:**
+ 
+- **5-10 design-partner pilots in the next 30 days** — capturing real pricing validation, conversion intent, and willingness-to-pay data before June 14. This closes the evidence gap.
+- **Golden dataset scales from 7 rows to 100+ pre-launch, 200+ within 90 days.** The 90% accuracy claim becomes statistically defensible, not anecdotal.
+- **Loop 1 architecture spec'd in M5 within 30 days.** Concrete answer to "how does the system learn from corrections without training on customer content."
+**Why this is the right call:**
+ 
+- It protects the launch economics. We can ship HQ AI at $2 with confidence in the margin.
+- It creates a clean upsell story for sales: *"If you need multi-format content at scale, that's HQ+ Enterprise."*
+- It's commercially honest. We're not pretending the math works when it doesn't.
+- It doesn't kill the feature. It just puts it in the tier where the price can pay for the cost.
+This is the kind of decision a strategy is supposed to surface — and the kind that's hard to make once a feature has been positioned as a headline.
+ 
+---
  
 ## Three-Horizon Roadmap
  
@@ -79,5 +206,3 @@ Six weeks ago my AI strategy was a single feature — Liquid Content. Today it's
 > AI doesn't need another tool. It needs somewhere work already happens.
 >
 > **Microsoft has 78 things named Copilot. We have one HQ.**
-
----

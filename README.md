@@ -1,6 +1,6 @@
 # Workvivo HQ
+Microsoft Copilot is AI without a home — bolted onto apps half the workforce never opens, a disconnected experience that takes years to deliver value. Workvivo HQ is the AI-native headquarters every employee deserves — the experience layer where AI lands successfully, for the 80% of the workforce Microsoft Copilot and Glean can't reach, at $2-6 per user per month. 
 
-> Workvivo HQ is the AI-native headquarters every employee deserves — the experience layer where AI lands successfully, for the 80% of the workforce Microsoft Copilot and Glean can't reach, at $6 per user per month.
 
 ---
 

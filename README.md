@@ -22,7 +22,7 @@
 **What we're building, for whom, why now.**
 
 - **Product:**
-- **AI Value Archetype:** Primary: Copilot — HQ is positioned as the daily AI companion for every employee, which makes Copilot the dominant archetype. This is also the head-to-head with Microsoft Cowork — our defence isn't a different archetype, it's better reach (frontline + desk) and stronger signal (Seer + cross-pillar data).
+- **AI Value Archetype:** Primary: Copilot 
 - **Vulnerability Scores:** Moat 4/5 · Data 4/5 · Platform 3/5
 - **Top Risk:** *One line: what's the single biggest strategic risk?*
 - **Confidence:** H

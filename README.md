@@ -1,6 +1,6 @@
-# Workvivo HQ AI
+# Workvivo HQ 
 
-> Workvivo HQ AI is the bet that turns the platform 9 million employees already use into the experience layer where AI lands successfully — three pillars of AI capability priced at $2-6 per user per month to reach the 80% of the workforce Microsoft Copilot and Glean structurally can't license.
+> Workvivo HQ is the bet that turns the platform 9 million employees already use into the experience layer where AI lands successfully — three pillars of AI capability priced at $2-6 per user per month to reach the 80% of the workforce Microsoft Copilot and Glean structurally can't license.
 
 ---
 
@@ -21,7 +21,7 @@
 
 **What we're building, for whom, why now.**
 
-- **Product:** Workvivo HQ AI — the AI capability layer embedded across Workvivo HQ's three product pillars (Communication & Engagement, Search & Knowledge, People Intelligence). Built into the platform 9 million employees already open every day, not bolted on. Fed by an expanding connector ecosystem and user-generated content competitors structurally can't see.
+- **Product:** Workvivo HQ — the AI capability layer embedded across Workvivo HQ's three product pillars (Communication & Engagement, Search & Knowledge, People Intelligence). Built into the platform 9 million employees already open every day, not bolted on. Fed by an expanding connector ecosystem and user-generated content competitors structurally can't see.
 - **AI Value Archetype:** Copilot (primary) — HQ AI is the daily AI companion for every employee, head-to-head with Microsoft Cowork. The defence isn't a different archetype; it's better reach (frontline + desk) and stronger signal (Seer + cross-pillar data).
 - **Vulnerability Scores:** Moat 4/5 · Data 4/5 · Platform 3/5
 - **Top Risk:** Microsoft consolidates EX into Copilot Cowork via the M365 App Store partner ecosystem inside 12 months — collapsing the HQ AI bet from a category claim into "the thing some companies pay extra for when Microsoft is already in the building."

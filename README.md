@@ -1,6 +1,6 @@
-# Workvivo HQ
-Microsoft Copilot is AI without a home — bolted onto apps half the workforce never opens, a disconnected experience that takes years to deliver value. Workvivo HQ is the AI-native headquarters every employee deserves — the experience layer where AI lands successfully, for the 80% of the workforce Microsoft Copilot and Glean can't reach, at $2-6 per user per month. 
+# Workvivo HQ AI
 
+> Workvivo HQ AI is the bet that turns the platform 9 million employees already use into the experience layer where AI lands successfully — three pillars of AI capability priced at $2-6 per user per month to reach the 80% of the workforce Microsoft Copilot and Glean structurally can't license.
 
 ---
 
@@ -21,13 +21,13 @@ Microsoft Copilot is AI without a home — bolted onto apps half the workforce n
 
 **What we're building, for whom, why now.**
 
-- **Product:** Workvivo HQ — the AI-native headquarters for every employee. Three product pillars (Communication & Engagement, Search & Knowledge, People Intelligence) on one platform, fed by an expanding connector ecosystem and user-generated content competitors structurally can't see.
-- **AI Value Archetype:** Copilot (primary) — HQ is the daily AI companion for every employee, head-to-head with Microsoft Cowork. Defence isn't a different archetype; it's better reach (frontline + desk) and stronger signal (Seer + cross-pillar data).
+- **Product:** Workvivo HQ AI — the AI capability layer embedded across Workvivo HQ's three product pillars (Communication & Engagement, Search & Knowledge, People Intelligence). Built into the platform 9 million employees already open every day, not bolted on. Fed by an expanding connector ecosystem and user-generated content competitors structurally can't see.
+- **AI Value Archetype:** Copilot (primary) — HQ AI is the daily AI companion for every employee, head-to-head with Microsoft Cowork. The defence isn't a different archetype; it's better reach (frontline + desk) and stronger signal (Seer + cross-pillar data).
 - **Vulnerability Scores:** Moat 4/5 · Data 4/5 · Platform 3/5
-- **Top Risk:** Microsoft consolidates EX into Copilot Cowork via the M365 App Store partner ecosystem inside 12 months — collapsing HQ from a category claim into "the thing some companies pay extra for when Microsoft is already in the building."
+- **Top Risk:** Microsoft consolidates EX into Copilot Cowork via the M365 App Store partner ecosystem inside 12 months — collapsing the HQ AI bet from a category claim into "the thing some companies pay extra for when Microsoft is already in the building."
 - **Confidence:** H (upgraded from M after Module 6 — Liquid Content repositioning, brand narrative alignment, and Cross-Pillar moat clarity changed the picture)
 - **Prototype:** https://workvivo-hq.replit.app/
-- **Kill Criteria:** In any kill case, we prioritise deeper LLM extensibility — Workvivo remains the experience layer — while deprioritising spend on AI features that aren't earning their inference cost. Triggers: (a) Microsoft extends Copilot Cowork with a credible partner-built EX skill pack (recognition, journeys, sentiment, frontline) before our H2 connector pilot proves out; (b) HQ Core daily-active usage falls below 70% across the contracted base in the first 6 months; (c) Liquid Content v2 unit economics don't close in H3.
+- **Kill Criteria:** In any kill case, we prioritise deeper LLM extensibility — HQ remains the experience layer — while deprioritising AI features that aren't earning their inference cost. Triggers: (a) Microsoft extends Copilot Cowork with a credible partner-built EX skill pack (recognition, journeys, sentiment, frontline) before our H2 connector pilot proves out; (b) HQ AI adoption falls below 40% of HQ Core users in the first 6 months; (c) Liquid Content v2 unit economics don't close in H3.
 
 → Details: [`01-the-bet/`](01-the-bet/)
 
@@ -40,8 +40,8 @@ Microsoft Copilot is AI without a home — bolted onto apps half the workforce n
 - **Data Flywheel Score:** 3/5 — one active loop (Cross-Domain Transfer), one missing by design (Network Intelligence, privacy-gated), one broken (Recursive Learning), one partial (Engagement Prediction).
 - **Weakest Loop:** Loop 1 — Usage → Correction. We capture corrections but don't compound them at the platform layer because we don't train on customer content. Closure is the H3 architectural fix.
 - **Top Encroachment Threat:** Microsoft Copilot Cowork extended via M365 App Store partner-built EX skills (Beekeeper, Yoobic, Firstup) — letting Microsoft own the layer and partners do the long-tail feature work.
-- **Encroachment Defense:** Build on what's already working. Ask HQ already surfaces content gaps to admins — a working surface-to-surface signal flow today, just one that routes through a person. Close Loop 1 at the platform layer (retrieval, ranking, orchestration) rather than the model layer. Compound Cross-Domain Transfer between pillars so the system gets demonstrably smarter quarter-over-quarter.
-- **Vendor Portability:** Partial. Zoom AI Companion runs federated routing across Anthropic and OpenAI (Anthropic via AWS Bedrock for EU). We don't independently choose model providers — Zoom does. If Zoom shifts routing or pricing, our economics shift with it. Mitigation: provider-neutral evaluation criteria so re-routing through Zoom is feasible if needed.
+- **Encroachment Defense:** Build on what's already working. Ask HQ already surfaces content gaps to admins — a working surface-to-surface signal flow today, just one that routes through a person. Close Loop 1 at the platform layer (retrieval, ranking, orchestration) rather than the model layer. Compound Cross-Domain Transfer between pillars so the AI gets demonstrably smarter quarter-over-quarter.
+- **Vendor Portability:** Partial. Zoom AI Companion runs federated routing across Anthropic and OpenAI (Anthropic via AWS Bedrock for EU). We don't independently choose model providers — Zoom does. If Zoom shifts routing or pricing, our AI economics shift with it. Mitigation: provider-neutral evaluation criteria so re-routing through Zoom is feasible if needed.
 
 → Details: [`02-the-moat/`](02-the-moat/)
 
@@ -51,10 +51,10 @@ Microsoft Copilot is AI without a home — bolted onto apps half the workforce n
 
 **Will this make money or bleed it?**
 
-- **Gross Margin (current):** ~82% (non-AI platform)
+- **Gross Margin (current, platform-only):** ~82%
 - **Gross Margin (AI-adjusted):** ~50% blended at $6 list. AI tier alone runs at ~6% at the $2 entry price — deliberately thin to drive adoption, not a permanent margin position.
-- **Pricing Model:** Hybrid tier-based seat pricing + consumption-based overage. Customers buy seats at the tier that matches expected AI usage; each seat includes a credit allocation; usage above allocation is PAYG at per-action rates.
-- **Pricing Today → Tomorrow:** $4 platform today → $4 + $2 HQ AI ($6 combined) at June 14 launch · HQ+ at $10 PUPM · HQ+ Enterprise (ZoomMate, request only) at $24 PUPM
+- **Pricing Model:** Hybrid tier-based seat pricing + consumption-based overage. Customers buy AI seats at the tier that matches expected usage; each seat includes a credit allocation; usage above allocation is PAYG at per-action rates.
+- **Pricing Today → Tomorrow:** $4 platform today → $4 platform + $2 HQ AI ($6 combined) at June 14 launch · HQ+ AI at $10 PUPM · HQ+ Enterprise (full agentic, ZoomMate, request only) at $24 PUPM
 - **Total AI COGS / unit:** ~$1.88 per HQ AI seat per month at the planned 20/65/15 cascade ratio
 - **Cascading Strategy:** 20% lightweight (triage) / 65% standard / 15% advanced (frontier). Smart routing v1 ships in H2.
 - **Net Margin Shift:** -32 points combined (82% → 50%) — but ARPU expands ~50%, and the AI tier unlocks a parallel commercial motion via Seer Standalone that doesn't require a full platform contract.
@@ -70,7 +70,7 @@ Microsoft Copilot is AI without a home — bolted onto apps half the workforce n
 
 - **Reliability Target:** 90% on the golden dataset, checked weekly. Zero tolerance for fabrication on policy, personnel, legal, or financial content.
 - **Golden Dataset:** 7 rows, 3 adversarial. Expansion plan: 100+ rows by launch, 200+ rows within 90 days, with adversarial coverage across multilingual, sensitive content, and historical poisoning scenarios.
-- **Confidence UX:** Legibility before precision. HQ shows confidence as a composite signal across every AI surface (Ask HQ, Catch Me Up, Seer, Compose), surfaces the data driving each prediction, and routes sensitive predictions through human review before they reach an end user.
+- **Confidence UX:** Legibility before precision. HQ AI shows confidence as a composite signal across every AI surface (Ask HQ, Catch Me Up, Seer, Compose), surfaces the data driving each prediction, and routes sensitive predictions through human review before they reach an end user.
 - **HITL Architecture:** Three triggers across all HQ AI surfaces — (1) model confidence below 70%; (2) sensitive content or action (DEI, leadership transitions, layoffs, M&A, legal, safety, executive messages); (3) any commitment that reaches a customer or writes to a system of record. Drafting and retrieval are auto. Anything that lands externally requires human approval.
 - **Failure Mode Coverage:** Engagement prediction calibration (does "90% predicted" mean 90% in production?), multilingual tone validation for regional variants of sensitive content, historical data poisoning (the model learning the wrong pattern from low-quality past data), and the Air Canada precedent (every AI commitment is a company commitment).
 
@@ -99,16 +99,16 @@ Microsoft Copilot is AI without a home — bolted onto apps half the workforce n
 
 **How you get this funded, shipped, and adopted.**
 
-- **Horizon 1 (Now · 0–4 weeks):** Search & Knowledge pillar AI (Agentic Search across major enterprise systems — M365, ServiceNow, Workday, Google) · Communication & Engagement pillar AI (Catch Me Up, AI Compose across surfaces, Smart Chapters, Journey Builder, Page Builder) · People Intelligence pillar AI (Seer Summaries, Recommended Actions, Topic Grouping) · Seer Standalone (Glint alternative — new commercial motion sells without a Workvivo platform contract) · Level 3 governance posture live · $2/$6/$20 pricing tiers active.
+- **Horizon 1 (Now · 0–4 weeks):** Search & Knowledge pillar AI (Agentic Search across major enterprise systems — M365, ServiceNow, Workday, Google) · Communication & Engagement pillar AI (Catch Me Up, AI Compose across surfaces, Smart Chapters, Journey Builder, Page Builder) · People Intelligence pillar AI (Seer Summaries, Recommended Actions, Topic Grouping) · Seer Standalone (Glint alternative — new commercial motion sells without a full Workvivo platform contract) · Level 3 governance posture live · $2/$6/$20 AI tier pricing active.
 
 - **Horizon 2 (Next · 1–3 months):** Connector ecosystem expansion (toward 1000+, prioritised by deal-blocking gaps) · Seer recommends actions automatically with HITL approval · Smart routing v1 (cascade routing protects AI margin at scale) · Network Intelligence pilot (10 opt-in design partners, privacy-gated cross-customer learning) · ZoomMate usage-based add-on ($20 + overages, request-only).
 
 - **Horizon 3 (Bet · 3–6 months):** Liquid Content v2 (rebuilt as a premium-only feature in HQ+ Enterprise — scoped to 2–3 content formats that drive engagement lift) · Loop 1 fully closed (Recursive Learning compounds at the platform layer) · Cross-Domain Transfer automated between pillars (Comms → Search → Seer handoffs without human routing) · Zoom AI Docs integration (read-side first) · Connected intelligence from HRIS, L&D, and other sources · Presentations builder.
 
-- **Board Narrative:** *"AI doesn't succeed because it exists. It succeeds when people use it, trust it, and experience it in the flow of work."* Most vendors are shipping AI features. We're shipping the experience layer where AI lands. Workvivo HQ is the AI-native headquarters for every employee — three pillars on one platform, fed by an expanding connector ecosystem and user-generated content competitors structurally can't see, priced at $6 combined to reach the 80% of the workforce Microsoft Copilot and Glean structurally can't license.
+- **Board Narrative:** *"AI doesn't succeed because it exists. It succeeds when people use it, trust it, and experience it in the flow of work."* Most vendors are shipping AI features. Workvivo HQ AI is the bet that the experience layer is where AI actually lands — three pillars on one platform 9 million employees already open daily, priced at $2-6 to reach the 80% of the workforce Microsoft Copilot and Glean structurally can't license.
 
 - **Ask:** **Deprioritise Liquid Content as a bundled feature. Move it to premium-only.** Liquid Content's unit economics don't work at $2 per user per month — multi-format generation costs more than the entry tier carries. Repositioning it to HQ+ Enterprise as a premium upsell (with optional usage-based add-on for HQ+ customers) protects launch economics, creates a clean upsell story for sales, and doesn't kill the feature — it puts it in the tier where the price can pay for the cost. Rebuild as Liquid Content v2 in H3 with this commercial frame from day one.
 
-- **Key Strategic Change:** From single-feature bet to category bet. M1 framed Liquid Content as the wedge into the broader Workvivo AI proposition. The course surfaced that (a) HQ — not Liquid Content — is the category claim, (b) reach and signal density (Cross-Pillar Transfer) are the structural moat, not engagement prediction, and (c) Liquid Content's unit economics don't survive the $2 entry tier. Same product DNA. An order-of-magnitude bigger strategic claim. Liquid Content moves from launch wedge to H3 premium upsell.
+- **Key Strategic Change:** From single-feature bet to AI capability layer. M1 framed Liquid Content as the wedge into the broader Workvivo AI proposition. The course surfaced that (a) the AI bet is the capability layer across HQ's three pillars — not any single feature, (b) reach and signal density (Cross-Pillar Transfer) are the structural moat, not engagement prediction, and (c) Liquid Content's unit economics don't survive the $2 entry tier. Same product DNA. An order-of-magnitude bigger strategic claim. Liquid Content moves from launch wedge to H3 premium upsell.
 
 → Details: [`06-the-pitch/`](06-the-pitch/)
